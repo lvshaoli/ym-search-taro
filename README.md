@@ -10,10 +10,14 @@ taro多端小程序
    example:  npm run tpl taroPage ./src/pages/   将创建模板到./src/pages/路径下
    
 部分页面
-
+![Image](https://github.com/lvshaoli/ym-search-taro/blob/master/somepage/WX20200117-093135.png)
+![Image](https://github.com/lvshaoli/ym-search-taro/blob/master/somepage/WX20200117-093210.png)
+![Image](https://github.com/lvshaoli/ym-search-taro/blob/master/somepage/WX20200117-093252.png)
   
-组件：
-  1.
+组件:
 
-  1.下拉刷新，上拉加载更多
+  1. 通讯录搜索
+  2.下拉刷新，上拉加载更多
+  3.搜索框自动聚焦
+  ...
   
