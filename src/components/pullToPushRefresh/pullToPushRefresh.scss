@@ -1,0 +1,49 @@
+@import '@styles/theme.scss';
+.pullToPushRefresh{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .downDragBox{
+    width: 100%;
+    top: 0px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: absolute;
+  }
+  .downText{margin-left: 20px;}
+  .home__wrap{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+.at-activity-indicator__content {
+  font-size: 28px;
+}
+
+.at-loading__ring {
+  width: 36px;
+  height: 36px;
+}
+.at-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.at-activity-indicator__content {
+  margin-left: 0;
+}
+
+.at-load-more__tip {
+  font-size: 32px;
+}
+
+.at-button {
+  font-size: 32px;
+}

@@ -1,0 +1,22 @@
+@import '@styles/theme.scss';
+
+.searchView {
+  height: 66px;
+  background-color: $input-bg;
+  border-radius: 33px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-margin-right16 {
+  margin-right: 16px;
+  width: 30px;
+  height: 30px;
+}
+
+.search-view-placeholder-text {
+    color: #999999;
+  font-size: 28px;
+}

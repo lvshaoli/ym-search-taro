@@ -1,0 +1,44 @@
+@import '@styles/theme.scss';
+.commonBorderBtn {
+  margin-right: 8px;
+  @include lamp-clamp(1)
+}
+
+.common-border-large-content {
+  padding: 8px 24px;
+  display: flex;
+  border-radius: 27px;
+  border: 1PX solid $primary-color;
+}
+
+.common-border-large-text {
+  font-size: 24px;
+  color: $primary-color;
+}
+
+
+
+.common-index-border-content {
+  padding: 8px 24px;
+  display: flex;
+  border-radius: 27px;
+  background-color: $primary-color;
+  border: 1PX solid $primary-color;
+}
+.common-index-border-gray-content {
+  background-color: white;
+  border: 1PX solid $btn-disabled;
+  border-radius: 8px;
+  padding: 0px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.common-index-border-text {
+  font-size: 24px;
+  color: white;
+}
+.common-index-border-gray-text {
+  color: $text-color-lighter;
+  font-size: 20px;
+}

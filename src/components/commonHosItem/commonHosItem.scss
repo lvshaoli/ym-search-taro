@@ -1,0 +1,56 @@
+@import '@styles/theme.scss';
+.commonHosItem {
+  display: flex;
+  flex-direction: row;
+  //border-bottom: 1px solid #EDEDED;
+  padding: 24px 0;
+  position: relative;
+}
+
+.common-hos-item-line {
+  position: absolute;
+  left: -30px;
+  right: -30px;
+  bottom: 0;
+  background-color: #EDEDED;
+  height: 1PX;
+}
+
+.common-hos-item-dept-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.common-hos-item-center-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  //width: 535px;
+}
+
+.common-hos-item-btn-container {
+  width: 565px;
+  margin-left: -10px;
+}
+
+.common-hos-item-center-left-text {
+  color: $text-color-light;
+  font-size: 26px;
+}
+
+.common-hos-item-center-right-text {
+  color: $text-color-lighter;
+  font-size: 26px;
+}
+
+.common-hos-item-top-text {
+  color: #2B2B2B;
+  font-size: 30px;
+}
+
+.common-hos-right-container {
+  margin-left: 16px;
+}

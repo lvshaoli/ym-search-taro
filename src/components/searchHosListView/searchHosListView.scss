@@ -1,0 +1,37 @@
+@import '@styles/theme.scss';
+.searchHosListView {
+  padding-top: 32px;
+  background-color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.search-hos-list-view-text {
+  font-size: 32px;
+  color: $text-color;
+  font-weight: bold;
+}
+
+.search-hos-list-view-bottom {
+  height: 84px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.search-hos-list-bottom-text {
+  font-size: 26px;
+  color: $primary-color;
+  display: inline;
+}
+
+.search-hos-list-bottom-line {
+  position: absolute;
+  height: 20px;
+  left: -30px;
+  right: -30px;
+  bottom: -20px;
+  background-color: #F2F2F2;
+}

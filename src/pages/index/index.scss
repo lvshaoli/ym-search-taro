@@ -1,0 +1,48 @@
+@import '../../styles/theme.scss';
+
+.index {
+  flex-direction: column;
+  width: 100%;
+}
+
+.index_top_view {
+  background-color: $white;
+  padding: 32px 30px;
+}
+
+.index_top_view_first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.index-top-view-second {
+  display: flex;
+  margin-top: 48px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.index-top-view-third {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.index-my-home-item {
+  margin-right: 88px;
+}
+
+.index-home-center-swiper-container {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.index-home-center-third-best {
+  background-color: white;
+  padding: 30px;
+  margin-top: 20px;
+}

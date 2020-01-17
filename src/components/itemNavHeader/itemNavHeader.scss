@@ -1,0 +1,43 @@
+@import '@styles/theme.scss';
+.itemNavHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-nav-header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-nav-header-left-image {
+  width: 34px;
+  height: 34px;
+}
+
+.item-nav-header-left-text {
+  color: $text-color;
+  font-size: 32px;
+  margin-left: 16px;
+}
+
+
+.item-nav-header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-nav-header-right-image {
+  width: 18px;
+  height: 26px;
+}
+
+.item-nav-header-right-text {
+  color: $text-color-lighter;
+  font-size: 28px;
+  margin-right: 10px;
+}
+

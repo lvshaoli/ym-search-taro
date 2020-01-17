@@ -1,0 +1,17 @@
+@import '@styles/theme.scss';
+.serviceSingle {
+  background-color: white;
+  padding: 30px;
+}
+
+.service-single-title {
+  color: $text-color;
+  font-size: 30px;
+}
+
+.index-top-view-third {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}

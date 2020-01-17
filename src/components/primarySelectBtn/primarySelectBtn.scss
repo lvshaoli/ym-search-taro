@@ -1,0 +1,62 @@
+@import '@styles/theme.scss';
+
+
+// green-gray
+.primary-select-bg {
+  border-radius: 24px;
+  padding: 8px 24px;
+  display: flex;
+  background-color: rgba(12,192,189,0.12);
+  margin-right: 16px;
+}
+
+.primary-select-text {
+  font-size: 24px;
+  color: $primary-color;
+}
+
+.primary-unselect-bg {
+  border-radius: 24px;
+  padding: 8px 24px;
+  margin-right: 16px;
+  display: flex;
+  background-color: $tag-dark;
+}
+
+.primary-unselect-text {
+ font-size: 24px;
+  color: $text-color-light;
+}
+
+.primary-margin-bottom {
+  margin-bottom: 30px;
+}
+
+// blue-gray
+
+.primary-select-blue-bg {
+  border-radius: 27px;
+  padding: 8px 32px;
+  display: flex;
+  background-color: #479CF0;
+  margin-right: 16px;
+}
+.primary-select-blue-text {
+  font-size: 26px;
+  color: white;
+}
+
+
+.primary-unselect-blue-bg {
+  border-radius: 27px;
+  padding: 8px 32px;
+  margin-right: 16px;
+  display: flex;
+  background-color: $input-bg;
+}
+
+
+.primary-unselect-blue-text {
+  font-size: 26px;
+  color: #31363C;
+}

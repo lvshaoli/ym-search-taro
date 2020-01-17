@@ -1,0 +1,16 @@
+@import '@styles/theme.scss';
+.hostipalList {
+  height: 100vh;
+}
+
+.hos-list-item-container {
+  background-color: white;
+  padding: 0 30px;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  z-index: 9999999;
+}

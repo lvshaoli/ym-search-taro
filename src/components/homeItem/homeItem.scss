@@ -1,0 +1,27 @@
+@import '@styles/theme.scss';
+.homeItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.home-item-image {
+  width: 100px;
+  height: 100px;
+}
+
+.home-item-image-small {
+  width: 52px;
+  height: 52px;
+}
+.home-item-text-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+.home-item-text {
+  color: #333333;
+  font-size: 26px;
+}

@@ -1,0 +1,45 @@
+@import '@styles/theme.scss';
+.changeCity {
+}
+
+.change-city-top-container {
+  padding: 32px 30px;
+  background-color: white;
+}
+
+.change-city-container-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.change-city-container-content-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-content-right-image {
+  width: 24px;
+  height: 19px;
+  margin-left: 15px;
+}
+
+.change-city-container-content-left-text {
+  font-size: 30px;
+  color: $text-color;
+}
+
+.container-content-right-text {
+  font-size: 28px;
+  color: $text-color-lighter;
+}
+
+.change-city-region-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

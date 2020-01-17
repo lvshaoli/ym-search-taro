@@ -1,0 +1,29 @@
+@import '@styles/theme.scss';
+.searchRecommendHis {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.search-recommend-his-topcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-recommend-his-topcontainer-text {
+    font-size: 28px;
+  color: #666A6D;
+}
+
+.search-recommend-his-topcontainer-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.search-recommend-his-topcontainer-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}

@@ -1,0 +1,8 @@
+{
+  "extends": [],
+  "rules": {
+    "at-rule-no-unknown": [true, {"ignoreAtRules" :[
+      "mixin", "extend", "content"
+    ]}]
+  }
+}

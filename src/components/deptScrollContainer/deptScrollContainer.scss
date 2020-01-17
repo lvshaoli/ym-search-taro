@@ -1,0 +1,27 @@
+@import '@styles/theme.scss';
+
+.index-hos-dept-label-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.index-hos-dept-scrollview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 900px;
+}
+.dept-scroll-container-down-container {
+  position: absolute;
+  right: 0;
+  z-index: 99999;
+  background-color: white;
+}
+
+.dept-scroll-container-down {
+  width: 24px;
+  height: 17px;
+}

@@ -1,0 +1,55 @@
+@import "./mixins.scss";
+
+
+/* colors
+-------------------------- */
+$primary-color: #0CC0BD;
+$disabled-color: #dddddd;
+
+$black: #000000;
+$white: #ffffff;
+
+$text-color: #333333;
+$text-color-light: #666666;
+$text-color-lighter: #999999;
+
+$border-color: #dddddd;
+$border-radius: 4px;
+
+$image-bg: #f4f4f4;
+
+$input-bg: #F5F5F5;
+
+$color-brand: #f1836f;
+$color-brand-light: #f39b8b;
+$color-brand-dark: #f5735b;
+$color-info: #f39b8b;
+$color-dan: #fbd8d1;
+$color-ex: #bc86bc;
+$color-border-base: #eee;
+//
+$color-primary: #f1836f !default;
+$color-deep: #f5735b !default;
+$border: #f1f1f1 !default;
+$font-primary: #333 !default;
+$font-default: #666 !default;
+$font-active: #111 !default;
+$font-info: #aaa !default;
+/* button-colors
+-------------------------- */
+
+$btn-active: #f5735b !default;
+$btn-disabled: #ccc !default;
+$btn-disabled-else: mix(#fff, $btn-active, 70%) !default;
+/* background-colors
+-------------------------- */
+
+$bg-color-base: #f8f8f8 !default;
+$bg-color-light: #ddd !default; //页面浅灰背景&图片浅灰背景
+$bg-color-danger: #f9efef !default; //页面浅红背景&按钮边框
+$bg-color-panel: #ec5d75 !default;
+/* tag-colors
+-------------------------- */
+
+$tag-primary: #d87182 !default;
+$tag-dark: #F8F8F8 !default;

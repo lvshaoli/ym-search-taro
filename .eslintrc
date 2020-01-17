@@ -1,0 +1,115 @@
+{
+  "extends": ["taro"],
+  "rules": {
+    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "indent": ["error", 2],    // 缩进2
+    "semi": ["error", "never"], // 句末不能加分号
+    "quotes": [1, "single"],   // 字符串强制使用单引号
+    "padded-blocks": 0,//块语句内行首行尾是否要空行
+    "keyword-spacing": 1, //关键字后边加空格
+    "no-irregular-whitespace": 2,//不能有不规则的空格
+    "no-multi-spaces": 1,//不能用多余的空格
+    "no-multiple-empty-lines": [1, {"max": 2}],//空行最多不能超过2行
+    "space-before-function-paren": ["error", "always"], // 函数声明时括号与函数名间加空格
+    "rest-spread-spacing": ["error", "never"], // 展开运算符与它的表达式间不要留空白
+    "semi-spacing": 1, // 遇到分号时空格要后留前不留
+    "space-before-blocks": ["error", "always"], // 代码块首尾留空格
+    "space-in-parens": ["error", "never"], // 圆括号间不留空格
+    "no-whitespace-before-property": 1, // 属性前面不要加空格
+    "space-unary-ops": 1, // 一元运算符前面跟一个空格
+    "spaced-comment": 1, // 注释首尾留空格
+    "template-curly-spacing":  1, // 模板字符串中变量前后不加空格
+    "comma-spacing": 1,  // 逗号后面加空格
+    // 不允许有连续多行空行
+    "block-spacing": ["error", "always"], // 单行代码块两边加空格
+    "comma-style": 1, // 始终将逗号置于行末
+    "dot-location":  1, // 点号操作符须与属性需在同一行
+    "eol-last":  1, // 文件末尾留一空行
+    "func-call-spacing": 1, // 函数调用时标识符与括号间不留间隔
+    "key-spacing":  1, // 键值对当中冒号与值之间要留空白
+    // 使用 const/let 定义变量
+    "one-var":  1, // 每个 const/let 关键字单独声明一个变量
+    "no-redeclare":  1, // 不要重复声明变量
+    "no-undef-init":  1, // 不要使用 undefined 来初始化变量
+    "camelcase":  1, // 对于变量和函数名统一使用驼峰命名法
+    "no-self-assign": 1, // 避免将变量赋值给自己
+    "no-floating-decimal": 1, // 不要省去小数点前面的 0
+    "space-infix-ops":  1, // 字符串拼接操作符 (Infix operators) 之间要留空格
+    "no-multi-str":  1, // 不要使用多行字符串
+    "use-isnan":  2, // 检查 NaN 的正确姿势是使用 isNaN()
+    "valid-typeof":  1, // 用合法的字符串跟 typeof 进行比较操作
+    "accessor-pairs":  1, // 对象中定义了存值器，一定要对应的定义取值器
+    "no-array-constructor": 2, // 使用数组字面量而不是构造器
+    // 不要解构空值
+    "no-dupe-keys": 2, //, 对象字面量中不要定义重复的属性
+    // 不要扩展原生对象
+    "no-label-var": 2, //, 外部变量不要与对象属性重名
+    "object-property-newline":  1, // 对象属性换行时注意统一代码风格
+    "no-useless-computed-key":  1, // 避免使用不必要的计算值作对象属性
+    "no-caller":  1, // 避免使用 arguments.callee 和 arguments.caller
+    "no-dupe-args":  1, // 不要定义冗余的函数参数
+    "no-extra-bind": 1, // 避免多余的函数上下文绑定
+    "no-eval": 1, // 不要使用 eval()
+    "no-extra-parens":  1, // 不要使用多余的括号包裹函数
+    "no-func-assign":  1, // 避免对声明过的函数重新赋值
+    // 注意隐式的 eval()
+    "no-inner-declarations":  1, // 嵌套的代码块中禁止再定义函数
+    "no-new-func":  1, // 禁止使用 Function 构造器
+    "no-new-object":  1, // 禁止使用 Object 构造器
+    "wrap-iife":  1, // 调用匿名函数 (IIFEs) 使用括号包裹
+    // 不使用 Generator 函数语法
+    // 正则中不要使用控制符
+    // 正则中避免使用多个空格
+    // 类名要以大写字母开头
+    "no-class-assign":  1, // 避免对类名重新赋值
+    "constructor-super":  1, // 子类的构造器中一定要调用 super
+    "no-this-before-super":  1, // 使用 this 前请确保 super() 已调用
+    "no-useless-constructor":  1, // 禁止多余的构造器
+    "no-dupe-class-members":  1, // 类中不要定义冗余的属性
+    "new-parens":  1, // 无参的构造函数调用时要带上括号
+    "no-new":  1, // new 创建对象实例后需要赋值给变量
+    "no-duplicate-imports":  1, // 同一模块有多个导入时一次性写完
+    // import, export 和解构操作中，禁止赋值到同名变量
+    // 避免在 return 语句中出现赋值语句
+    // 禁止使用 with
+    // 不要使用标签语句
+    // 不要随意更改关键字的值
+    // return，throw，continue 和 break 后不要再跟代码
+    // 始终使用 === 替代 ==
+    "eqeqeq":  1,// 避免将变量与自己进行比较操作
+    // if/else 关键字要与花括号保持在同一行
+    // 多行 if 语句的的括号不能省略
+    "operator-linebreak": 1, // 对于三元运算符 ? 和 : 与他们所负责的代码处于同一行
+    "yoda":  1, // 请书写优雅的条件语句（avoid Yoda conditions）
+    "no-constant-condition":  1, // 避免使用常量作为条件表达式的条件（循环语句除外）
+    "no-unmodified-loop-condition":  1 // 循环语句中注意更新循环变量
+    // 如果有更好的实现，尽量不要使用三元表达式
+    // switch 语句中不要定义重复的 case 分支
+    // switch 一定要使用 break 来将条件分支正常中断
+    // 避免不必要的布尔转换
+    // 避免使用逗号操作符
+    // 不要丢掉异常处理中 err 参数
+    // catch 中不要对错误重新赋值
+    // 用 throw 抛错时，抛出 Error 对象而不是字符串
+    // finally 代码块中不要再改变程序执行流程
+    // 使用 Promise 一定要捕捉错误
+    // 所有内置组件均需要引入后再使用
+    // 推荐使用对象解构的方式来使用 state、props
+    // 不要以 class/id/style 作为自定义组件的属性名
+    // 不要使用 HTML 标签
+    // 不要在调用 this.setState 时使用 this.state
+    // map 循环时请给元素加上 key 属性
+    // 尽量避免在 componentDidMount 中调用 this.setState
+    // 不要在 componentWillUpdate/componentDidUpdate/render 中调用 this.setState
+    // 不要定义没有用到的 state
+    // 组件最好定义 defaultProps
+    // render 方法必须有返回值
+    // 值为 true 的属性可以省略书写值
+    // 属性书写不带空格，如果属性是一个对象，则对象括号旁边需要带上空格
+    // 事件绑定均以 on 开头
+    // 子组件传入函数时属性名需要以 on 开头
+    // 不能使用 Array#map 之外的方法操作 JSX 数组
+  },
+  "parser": "babel-eslint"
+  }

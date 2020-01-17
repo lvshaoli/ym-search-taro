@@ -1,0 +1,18 @@
+@import '@styles/theme.scss';
+.commonHosBtnGroup {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  justify-content: flex-end;
+}
+
+.common-hos-btn-groud-first {
+  display: flex;
+  flex-direction: row;
+  margin-right: 32px;
+}
+
+.common-hos-btn-groud-second {
+  display: flex;
+  flex-direction: row;
+}
