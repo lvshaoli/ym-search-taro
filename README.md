@@ -9,7 +9,7 @@ taro多端小程序
   npm run tpl 页面模块名称  页面模块路径
    example:  npm run tpl taroPage ./src/pages/     将创建模板到./src/pages/路径下
    
-部分页面
+部分页面  
 ![Image](https://github.com/lvshaoli/ym-search-taro/blob/master/somepage/WX20200117-093135.png)
 ![Image](https://github.com/lvshaoli/ym-search-taro/blob/master/somepage/WX20200117-093210.png)
 ![Image](https://github.com/lvshaoli/ym-search-taro/blob/master/somepage/WX20200117-093252.png)
