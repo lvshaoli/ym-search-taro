@@ -13,6 +13,7 @@ taro多端小程序
 ![Image](https://github.com/lvshaoli/ym-search-taro/blob/master/somepage/WX20200117-093135.png)
 ![Image](https://github.com/lvshaoli/ym-search-taro/blob/master/somepage/WX20200117-093210.png)
 ![Image](https://github.com/lvshaoli/ym-search-taro/blob/master/somepage/WX20200117-093252.png)
+![Image](https://github.com/lvshaoli/ym-search-taro/blob/master/somepage/351E5BBD-F95B-4FD6-9EEE-EB664EEF5E6D.png)
   
 组件:
 
