@@ -11,4 +11,15 @@
   flex-direction: row;
   justify-content: space-around;
   background-color: white;
+  padding-bottom: 24px;
+}
+
+.list-filter-pop-top-unselect-text {
+  color: $text-color;
+  font-size: 28px;
+}
+
+.list-filter-pop-top-select-text {
+  color: $primary-color;
+  font-size: 28px;
 }
