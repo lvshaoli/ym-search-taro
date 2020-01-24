@@ -1,17 +1,15 @@
 /**
  * @Author: lvshaoli
  * @DATE: 2020-01-24
- * @TIME: 10:58
+ * @TIME: 16:49
  * @DESC: '请描述本页面功能'
  **/
 import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 // import PropTypes from 'prop-types'
-// import { connect } from '@tarojs/redux'
-import Content2item from './content2Item/content2Item'
-import './filterContent2.scss'
+import './content2Item.scss'
 
-class Filtercontent2 extends Component {
+class Content2item extends Component {
   // static propTypes = {
   //   children: PropTypes.any,
   //   data: PropTypes.array
@@ -20,7 +18,7 @@ class Filtercontent2 extends Component {
   // static defaultProps = {
   //   data: []
   // }
-
+    
   constructor () {
     super(...arguments)
   }
@@ -37,13 +35,16 @@ class Filtercontent2 extends Component {
 
   render () {
     return (
-      <View className='filterContent2'>
-        <Content2item />
-        <Content2item />
-        <Content2item />
+      <View className='content2Item'>
+        <View className='filter-content2-item-container'>
+          <Text className='filter-content2-item-text'>filterContent2</Text>
+        </View>
+        <View className='filter-content2-line'>
+          <Text></Text>
+        </View>
       </View>
     )
   }
 }
 
-export default Filtercontent2
+export default Content2item

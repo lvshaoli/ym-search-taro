@@ -1,0 +1,25 @@
+@import '@styles/theme.scss';
+.content2Item {
+  padding: 32px 30px;
+  background-color: white;
+  position: relative;
+}
+
+
+.filter-content2-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.filter-content2-item-text {
+  font-size: 28px;
+  color: $text-color;
+}
+.filter-content2-line {
+  position: absolute;
+  left: -30px;
+  right: -30px;
+  bottom: 0;
+  background-color: #EDEDED;
+  height: 1PX;
+}
