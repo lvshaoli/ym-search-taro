@@ -9,6 +9,8 @@ import { View } from '@tarojs/components'
 import Pulltopushrefresh from '@components/pullToPushRefresh/pullToPushRefresh'
 import Commonhositem from '@components/commonhositem/commonhositem'
 import Commonhosbtngroup from '@components/commonHosBtnGroup/commonHosBtnGroup'
+import Searchbar from '@components/searchBar/searchBar'
+import Listfilterpop from '@components/listFilterPop/listFilterPop'
 // import PropTypes from 'prop-types'
 // import { connect } from '@tarojs/redux'
 import './hostipalList.scss'
@@ -26,27 +28,27 @@ class Hostipallist extends Component {
   //   data: []
   // }
 
-    config = {
-      navigationBarTitleText: '医院'
+  config = {
+    navigationBarTitleText: '医院'
+  }
+
+  constructor () {
+    super(...arguments)
+    this.state = {
+      hasMore: true
     }
+  }
 
-    constructor () {
-      super(...arguments)
-      this.state = {
-        hasMore: true
-      }
-    }
+  componentWillReceiveProps (nextProps) {
+    console.log(this.props, nextProps)
+  }
 
-    componentWillReceiveProps (nextProps) {
-      console.log(this.props, nextProps)
-    }
+  componentWillUnmount () { }
 
-    componentWillUnmount () { }
+  componentDidShow () {
+  }
 
-    componentDidShow () {
-    }
-
-    componentDidHide () { }
+  componentDidHide () { }
 
   downPull = (callBack) => {
     console.log('下拉')
@@ -66,9 +68,19 @@ class Hostipallist extends Component {
     }, 4000)
   }
 
+  searchResClick () {}
+
   render () {
     return (
       <View className='hostipalList'>
+        <View className='hos-list-item-search-bar-container'>
+          <Searchbar
+            onBarClick={this.searchResClick.bind(this)}
+          />
+        </View>
+        <View className='hos-list-item-search-filter-container'>
+          <Listfilterpop />
+        </View>
         <View className='hos-list-item-container'>
           <Pulltopushrefresh onDown={this.downPull} onLoadMore={this.loadMorePush}>
             <Commonhositem

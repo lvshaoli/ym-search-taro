@@ -9525,14 +9525,7 @@ tar@^2.0.0:
     fstream "^1.0.12"
     inherits "2"
 
-taro-scrollbar@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.npm.taobao.org/taro-scrollbar/download/taro-scrollbar-0.0.2.tgz#dae820ad37d436b4ec0dfd01aa332fe8535a4a0d"
-  integrity sha1-2uggrTfUNrTsDf0BqjMv6FNaSg0=
-  dependencies:
-    taro-ui "^2.2.4"
-
-taro-ui@2.2.4, taro-ui@^2.2.4:
+taro-ui@2.2.4:
   version "2.2.4"
   resolved "https://registry.npm.taobao.org/taro-ui/download/taro-ui-2.2.4.tgz#96a486432e86d6d0d1eda70383c47c3284f5e8e6"
   integrity sha1-lqSGQy6G1tDR7acDg8R8MoT16OY=
