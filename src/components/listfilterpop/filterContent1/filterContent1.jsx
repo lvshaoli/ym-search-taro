@@ -5,9 +5,9 @@
  * @DESC: '请描述本页面功能'
  **/
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
 // import PropTypes from 'prop-types'
-// import { connect } from '@tarojs/redux'
+import Primaryselectbtn from '@components/primaryselectbtn/primaryselectbtn'
 import './filterContent1.scss'
 
 class Filtercontent1 extends Component {
@@ -23,6 +23,10 @@ class Filtercontent1 extends Component {
     
   constructor () {
     super(...arguments)
+    this.state = {
+      regionList: ['全城', '雁塔区', '新城区', '碑林区', '高新区', '长安区', '临潼区'],
+      selectedRegion: 0,
+    }
   }
 
   componentWillReceiveProps (nextProps) {
@@ -38,7 +42,21 @@ class Filtercontent1 extends Component {
   render () {
     return (
       <View className='filterContent1'>
-        <Text>filterContent1</Text>
+        { this.state.regionList && this.state.regionList.map((regionItem, index) => {
+
+          return <Primaryselectbtn
+            key={index}
+            primarySelectText={regionItem}
+            hasMagin
+            btnType='primary-gray'
+            checked={this.state.selectedRegion === index}
+            onPrimaryClick={() => {
+              this.setState({
+                selectedRegion: index
+              })
+            }}
+          />
+        }) }
       </View>
     )
   }

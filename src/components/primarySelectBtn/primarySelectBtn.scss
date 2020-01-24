@@ -60,3 +60,13 @@
   font-size: 26px;
   color: #31363C;
 }
+
+// primary-gray
+
+.primary-select-primaryblue-bg {
+  border-radius: 27px;
+  padding: 8px 32px;
+  display: flex;
+  background-color: $primary-color;
+  margin-right: 16px;
+}

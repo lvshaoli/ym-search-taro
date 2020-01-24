@@ -78,11 +78,11 @@ class Listfilterpop extends Component {
         </View>
         { (this.state.selectDis || this.state.selectFilterAll || this.state.selectFilter) &&
         <View className='listFilterPop' onClick={() =>{
-          this.setState({
-            selectDis: false,
-            selectFilterAll: false,
-            selectFilter: false
-          })
+          // this.setState({
+          //   selectDis: false,
+          //   selectFilterAll: false,
+          //   selectFilter: false
+          // })
         }}
         >
           {this.state.selectDis && <FilterContent1 />}

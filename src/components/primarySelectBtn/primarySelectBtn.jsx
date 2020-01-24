@@ -15,7 +15,7 @@ class Primaryselectbtn extends Component {
     primarySelectText: PropTypes.string,
     onPrimaryClick: PropTypes.func,
     hasMagin: PropTypes.bool, // 是否有下边距
-    btnType: PropTypes.string, // blue-gray  green-gray
+    btnType: PropTypes.string, // blue-gray  green-gray primary-gray
   }
 
   static defaultProps = {
@@ -46,6 +46,14 @@ class Primaryselectbtn extends Component {
       unSelectBtnClass = 'primary-unselect-blue-bg'
       selectTextClass = 'primary-select-blue-text'
       unSelectTextClass = 'primary-unselect-blue-text'
+    }
+
+    if (btnType === 'primary-gray') {
+      selectBtnClass = 'primary-select-primaryblue-bg'
+      unSelectBtnClass = 'primary-unselect-blue-bg'
+      selectTextClass = 'primary-select-blue-text'
+      unSelectTextClass = 'primary-unselect-blue-text'
+
     }
 
 
