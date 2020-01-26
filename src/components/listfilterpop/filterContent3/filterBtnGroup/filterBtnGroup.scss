@@ -1,0 +1,44 @@
+@import '@styles/theme.scss';
+.filterBtnGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.filter-btn-group-container {
+  width: 400px;
+  height: 74px;
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-btn-group-clean {
+  width: 200px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 42px;
+  border-bottom-left-radius: 42px;
+  box-shadow:2px 2px 2px #0CC0BD;
+  .filter-btn-group-clean-text {
+    color: $text-color-light;
+    font-size: 30px;
+  }
+}
+.filter-btn-group-confirm {
+  width: 200px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  border-top-right-radius: 42px;
+  border-bottom-right-radius: 42px;
+  .filter-btn-group-confirm-text {
+    color: white;
+    font-size: 30px;
+  }
+}

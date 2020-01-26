@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="089891b2-4e92-4850-8175-12cf949c0b8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/listfilterpop/filterContent2/filterContent2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/listfilterpop/filterContent2/filterContent2.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -21,67 +22,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent1/filterContent1.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+            <state relative-caret-position="-578">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding>
                 <element signature="e#88#134#0" expanded="true" />
-                <element signature="e#221#297#0" expanded="true" />
+                <element signature="e#215#291#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent2/filterContent2.jsx">
+        <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="1376">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
               <folding>
                 <element signature="e#88#134#0" expanded="true" />
-                <element signature="e#258#277#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent2/content2Item/content2Item.jsx">
+        <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-              <folding>
-                <element signature="e#88#134#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="310">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent2/content2Item/content2Item.scss">
+        <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterBtnGroup/filterBtnGroup.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/commonHosItem/commonHosItem.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-              <folding>
-                <element signature="e#84#130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/commonHosItem/commonHosItem.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="251">
+              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -135,9 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/index/index.scss" />
-        <option value="$PROJECT_DIR$/src/components/searchView/searchView.scss" />
-        <option value="$PROJECT_DIR$/src/components/searchView/searchView.jsx" />
         <option value="$PROJECT_DIR$/src/components/searchBar/searchBar.scss" />
         <option value="$PROJECT_DIR$/src/components/searchBar/searchBar.jsx" />
         <option value="$PROJECT_DIR$/.temp/components/commonHosBtnGroup/commonHosBtnGroup.scss" />
@@ -171,7 +144,6 @@
         <option value="$PROJECT_DIR$/config/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.jsx" />
         <option value="$PROJECT_DIR$/src/pages/hostipalList/hostipalList.scss" />
         <option value="$PROJECT_DIR$/src/pages/hostipalList/hostipalList.jsx" />
         <option value="$PROJECT_DIR$/src/components/pullToPushRefresh/pullToPushRefresh.scss" />
@@ -186,6 +158,10 @@
         <option value="$PROJECT_DIR$/src/components/listfilterpop/filterContent2/filterContent2.scss" />
         <option value="$PROJECT_DIR$/src/components/listfilterpop/filterContent2/content2Item/content2Item.jsx" />
         <option value="$PROJECT_DIR$/src/components/listfilterpop/filterContent2/content2Item/content2Item.scss" />
+        <option value="$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.jsx" />
+        <option value="$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.scss" />
+        <option value="$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterBtnGroup/filterBtnGroup.jsx" />
+        <option value="$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterBtnGroup/filterBtnGroup.scss" />
       </list>
     </option>
   </component>
@@ -243,7 +219,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="listfilterpop" type="462c0819:PsiDirectoryNode" />
-              <item name="filterContent2" type="462c0819:PsiDirectoryNode" />
+              <item name="filterContent3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ym-search-taro" type="b2602c69:ProjectViewProjectNode" />
@@ -251,8 +227,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="listfilterpop" type="462c0819:PsiDirectoryNode" />
-              <item name="filterContent2" type="462c0819:PsiDirectoryNode" />
-              <item name="content2Item" type="462c0819:PsiDirectoryNode" />
+              <item name="filterContent3" type="462c0819:PsiDirectoryNode" />
+              <item name="filterBtnGroup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,12 +294,13 @@
       <workItem from="1579221350177" duration="611000" />
       <workItem from="1579223822086" duration="1491000" />
       <workItem from="1579811302449" duration="254000" />
-      <workItem from="1579829070922" duration="9058000" />
+      <workItem from="1579829070922" duration="9173000" />
+      <workItem from="1580010746291" duration="3210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95823000" />
+    <option name="totallyTimeSpent" value="99148000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
@@ -355,27 +332,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/searchContentView/searchContentView.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/searchRecommendHis/searchRecommendHis.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/deptScrollContainer/deptScrollContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-414">
@@ -545,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/theme.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -617,20 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent1/filterContent1.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.temp/styles/theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -675,9 +610,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/listfilterpop.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding>
+            <element signature="e#82#128#0" expanded="true" />
+            <element signature="e#215#244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent2/filterContent2.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/commonHosItem/commonHosItem.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="795">
           <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
           <folding>
             <element signature="e#84#130#0" expanded="true" />
@@ -692,32 +645,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/listfilterpop.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent2/content2Item/content2Item.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-          <folding>
-            <element signature="e#82#128#0" expanded="true" />
-            <element signature="e#215#244#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent1/filterContent1.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent2/content2Item/content2Item.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        <state relative-caret-position="67">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
             <element signature="e#88#134#0" expanded="true" />
-            <element signature="e#221#297#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent2/filterContent2.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -727,25 +668,66 @@
           <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
           <folding>
             <element signature="e#88#134#0" expanded="true" />
-            <element signature="e#258#277#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent2/content2Item/content2Item.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent1/filterContent1.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        <state relative-caret-position="30">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent1/filterContent1.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding>
+            <element signature="e#88#134#0" expanded="true" />
+            <element signature="e#215#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.temp/styles/theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterBtnGroup/filterBtnGroup.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
           <folding>
             <element signature="e#88#134#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent2/content2Item/content2Item.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="1376">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+          <folding>
+            <element signature="e#88#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterContent3.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listfilterpop/filterContent3/filterBtnGroup/filterBtnGroup.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
         </state>
       </provider>
     </entry>
