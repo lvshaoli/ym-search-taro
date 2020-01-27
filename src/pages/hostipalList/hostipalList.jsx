@@ -11,6 +11,7 @@ import Commonhositem from '@components/commonhositem/commonhositem'
 import Commonhosbtngroup from '@components/commonHosBtnGroup/commonHosBtnGroup'
 import Searchbar from '@components/searchBar/searchBar'
 import Listfilterpop from '@components/listFilterPop/listFilterPop'
+import { navigateTo } from '@utils/navUtils'
 // import PropTypes from 'prop-types'
 // import { connect } from '@tarojs/redux'
 import './hostipalList.scss'
@@ -85,6 +86,9 @@ class Hostipallist extends Component {
           <Pulltopushrefresh onDown={this.downPull} onLoadMore={this.loadMorePush}>
             <Commonhositem
               renderGroup={<Commonhosbtngroup />}
+              onItemClick={() => {
+                navigateTo('/pages/hosDetail/hosDetail')
+              }}
             />
             <Commonhositem
               renderGroup={<Commonhosbtngroup />}

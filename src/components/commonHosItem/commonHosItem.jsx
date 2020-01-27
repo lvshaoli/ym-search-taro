@@ -13,7 +13,8 @@ import './commonHosItem.scss'
 
 class Commonhositem extends Component {
   static propTypes = {
-    renderGroup: PropTypes.any
+    renderGroup: PropTypes.any,
+    onItemClick: PropTypes.func
   }
   //
   // static defaultProps = {
@@ -32,7 +33,10 @@ class Commonhositem extends Component {
 
   render () {
     return (
-      <View className='commonHosItem'>
+      <View className='commonHosItem' onClick={() => {
+        this.props.onItemClick && this.props.onItemClick()
+      }}
+      >
         <View>
           <Commonimage
             imageSource={require('@assets/images/home/home_jddyfsyy.png')}

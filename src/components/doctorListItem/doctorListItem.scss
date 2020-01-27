@@ -1,0 +1,60 @@
+@import '@styles/theme.scss';
+.doctorListItem {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 32px 0;
+  position: relative;
+}
+
+.doctor-list-item-right-container {
+  margin-left: 32px;
+}
+
+.doctor-lite-item-right-intr {
+  display: flex;
+  flex-direction: row;
+}
+
+.doctor-list-item-name {
+  color: #31363C;
+  font-size: 30px;
+  margin-right: 24px;
+}
+
+.doctor-list-item-dept {
+    margin-right: 16px;
+  color: #666A6D;
+  font-size: 28px;
+}
+
+.doctor-list-item-grade {
+  color: #666A6D;
+  font-size: 28px;
+}
+
+.doctor-list-item-right-hos {
+  margin-top: 16px;
+}
+.doctor-list-item-right-text {
+  color: #666A6D;
+  font-size: 26px;
+}
+
+.doctor-list-item-right-desc {
+  margin-top: 16px;
+}
+
+.doctor-list-item-right-desc-text {
+  color: #96989B;
+  font-size: 24px;
+}
+
+.doctor-list-item-line {
+  position: absolute;
+  left: 0;
+  right: -30px;
+  bottom: 0;
+  background-color: #EDEDED;
+  height: 1PX;
+}
