@@ -48,7 +48,7 @@ class Commonimage extends Component {
       <Image
         onError={this.loadError.bind(this)}
         onLoad={this.onLoadFinish.bind(this)}
-        className='common-image-default-wh'
+        className={this.props.imageStyle ? '' : 'common-image-default-wh'}
         src={this.state.imagePath}
         style={this.props.imageStyle}
       />

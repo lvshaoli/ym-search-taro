@@ -1,0 +1,32 @@
+@import '@styles/theme.scss';
+.hosDetailBorderBtn {
+  padding: 0 8px 4px 8px;
+  border: 1px solid $primary-color;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+}
+
+.unSelectBorderBtn {
+  padding: 0 8px 4px 8px;
+  border: 1px solid #CCCCCC;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+}
+
+.unSelect-detail-border-btn-text {
+  color: $text-color-lighter;
+  font-size: 20px;
+}
+
+.hos-detail-border-btn-text {
+  color: $primary-color;
+  font-size: 20px;
+}

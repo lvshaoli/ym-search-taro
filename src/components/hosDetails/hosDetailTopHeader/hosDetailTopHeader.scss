@@ -1,0 +1,49 @@
+@import '@styles/theme.scss';
+.hosDetailTopHeader {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.hos-detail-topheader-left-container {
+  width: 100px;
+  margin-right: 24px;
+}
+
+.hos-detail-topheader-right-hosText {
+  color: $text-color;
+  font-size: 32px;
+}
+
+.hos-detail-tioheader-right-label {
+  font-size: 24px;
+  color: $text-color-lighter;
+  margin-right: 16px;
+}
+
+.hos-detail-topheader-right-date {
+  font-size: 24px;
+  color: $text-color-light;
+}
+
+.right-bottom-text {
+  font-size: 20px;
+  color: $text-color-light;
+}
+
+.hos-detail-topheader-right-bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.hos-detail-topheader-inner-contaner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

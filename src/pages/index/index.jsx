@@ -47,9 +47,7 @@ class Index extends Component {
         hospitalList: [
           {name: '医院',
             imageSource: require('@assets/images/home/home_hospital.png'),
-            onItemClick: () => {
-              console.log('医院')
-            }
+            onItemClick: this.threeHosClick.bind(this)
           },
           {name: '中医',
             imageSource: require('@assets/images/home/home_chinese_medial.png'),

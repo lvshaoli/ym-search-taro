@@ -5,9 +5,12 @@
  * @DESC: '请描述本页面功能'
  **/
 import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import { View, Text, Image } from '@tarojs/components'
 import Itemnavheader from '@components/itemNavHeader/itemNavHeader'
 import Doctorlistitem from '@components/doctorListItem/doctorListItem'
+import Hosdetailtopheader from '@components/hosDetails/hosdetailtopheader/hosdetailtopheader'
+import Commonimage from '@components/commonimage/commonimage'
+import Imgtoptextbtn from '@components/imgtoptextbtn/imgtoptextbtn'
 // import PropTypes from 'prop-types'
 // import { connect } from '@tarojs/redux'
 import './hosDetail.scss'
@@ -50,6 +53,164 @@ class Hosdetail extends Component {
     render () {
       return (
         <View className='hosDetail'>
+          <Hosdetailtopheader />
+
+          {/* 医院地址 */}
+          <View className='hos-detail-address-container'>
+
+            <View className='hos-detail-address-left-container'>
+              <Commonimage
+                imageSource={require('@assets/images/home/home_jddyfsyy.png')}
+                imageStyle={{
+                  'width': `${Taro.pxTransform(30)}`,
+                  'height': Taro.pxTransform(30),
+                  'margin-right': Taro.pxTransform(15),
+                  'margin-top': Taro.pxTransform(15)
+                }}
+              />
+
+              <View>
+                <View>
+                  <Text className='hos-detail-address-left-top-text'>雁塔区雁塔西路277号西安交通第一附属医院内</Text>
+                </View>
+
+                <View>
+                  <Text className='hos-detail-address-left-bottom-text'>距离您6.4km，点击查看路线</Text>
+                </View>
+              </View>
+
+            </View>
+
+            <View className='hos-detail-address-right-container'>
+              <Commonimage
+                imageSource={require('@assets/images/home/home_jddyfsyy.png')}
+                imageStyle={{'width': `${Taro.pxTransform(40)}`,
+                  'height': Taro.pxTransform(40)}}
+              />
+
+            </View>
+
+          </View>
+
+          {/* 重点科室 */}
+          <View className='hos-detail-doctor-intr-container'>
+            <Itemnavheader
+              headerIcon={require('@assets/images/home/home_threej_hospital.png')}
+              headerTitle='重点科室'
+              headerRightTitle=''
+              onHederNavClick={this.doctorIntrClick.bind(this)}
+            />
+            {/* 特色科室*/}
+            <View className='hos-detail-doctor-dept-container margin-top30'>
+              <View className='hos-detail-dept-title'>
+                <Text className='hos-detail-dept-title-text'>特色科室:</Text>
+              </View>
+
+              <View className='hos-detail-dept-content-container'>
+                <Text className='hos-detail-dept-content'>男科，妇产科，肿瘤科，器官移植科，男科，妇产科，肿瘤科，器官移植科，男科，妇产科，肿瘤科，器官移植科</Text>
+              </View>
+
+            </View>
+
+            {/* 可用医保 */}
+            <View className='hos-detail-doctor-dept-container margin-top30'>
+              <View className='hos-detail-dept-title'>
+                <Text className='hos-detail-dept-title-text'>可用医保:</Text>
+              </View>
+
+              <View className='hos-detail-dept-content-container'>
+                <Text className='hos-detail-dept-content'>居民医保，新农合</Text>
+              </View>
+
+            </View>
+
+
+          </View>
+
+          {/* 预约挂号 */}
+
+          <View className='hos-detail-doctor-intr-container hos-detail-space-between'>
+
+            <View className='hos-detail-doctor-gh-inner-container'>
+
+              <View className='hos-detail-doctor-img-container'>
+                <Commonimage
+                  imageSource={require('@assets/images/home/home_jddyfsyy.png')}
+                  imageStyle={{
+                    'width': `${Taro.pxTransform(28)}`,
+                    'height': Taro.pxTransform(28),
+                  }}
+                />
+
+              </View>
+
+              <View>
+                <View>
+                  <Text className='hos-detail-dept-content'>预约挂号</Text>
+                </View>
+
+                <View className='hos-detail-center-label-container'>
+                  <View className='hos-detail-label-container'>
+                    <Text className='hos-detail-label-text'>
+                      预约免费
+                    </Text>
+                  </View>
+
+                  <View className='hos-detail-label-container'>
+                    <Text className='hos-detail-label-text'>
+                      真实号源
+                    </Text>
+                  </View>
+
+                </View>
+              </View>
+
+
+              <View>
+
+              </View>
+
+            </View>
+
+            {/* 微信  电话 */}
+
+            <View className='hos-detail-wechat-phone-container'>
+              <Imgtoptextbtn />
+              <View className='hos-detail-wechat-line'>
+                <Text></Text>
+              </View>
+              <Imgtoptextbtn />
+            </View>
+
+          </View>
+
+          {/* 问答 */}
+
+          <View className='hos-detail-doctor-intr-container hos-detail-flex'>
+            <View className='hos-detail-wd-label-container'>
+              <Commonimage
+                imageSource={require('@assets/images/home/home_jddyfsyy.png')}
+                imageStyle={{
+                  'width': `${Taro.pxTransform(56)}`,
+                  'height': Taro.pxTransform(32),
+                }}
+              />
+            </View>
+
+            <View>
+
+              <View className='hos-detail-top-wd-container'>
+                <Text className='hos-detail-top-wd-text'>西安市医保可以在这里住院吗？</Text>
+                <Image className='hos-detail-left-image' src={require('@assets/images/home/home_common_right.png')} />
+              </View>
+
+              <View className='hos-detail-bottom-wd-container'>
+                <Text className='hos-detail-bottom-wd-text'>可以的，支持省市居民、职工医保、农合医职可以的，支持省市居民、职工医保、农合医职</Text>
+              </View>
+
+            </View>
+
+          </View>
 
           {/* 医生介绍 */}
           <View className='hos-detail-doctor-intr-container'>
@@ -63,8 +224,35 @@ class Hosdetail extends Component {
             <View className='hos-detail-doctor-intr-items'>
               <Doctorlistitem />
               <Doctorlistitem />
-              <Doctorlistitem />
             </View>
+          </View>
+
+          {/* 医院介绍 */}
+
+          <View className='hos-detail-doctor-intr-container'>
+            <Itemnavheader
+              headerIcon={require('@assets/images/home/home_threej_hospital.png')}
+              headerTitle='医院介绍'
+              headerRightTitle=''
+              onHederNavClick={this.doctorIntrClick.bind(this)}
+            />
+            <View className='hos-detail-hosIntr-container'>
+              <Text className='hos-detail-hosIntr-text'>
+                西安交通大学第一附属医院是国家卫生计生委西安交通大学第一附属医院是国家卫生计生委西安交通大学第一附属医院是国家卫生计生委
+                西安交通大学第一附属医院是国家卫生计生委西安交通大学第一附属医院是国家卫生计生委西安交通大学第一附属医院是国家卫生计生委
+                西安交通大学第一附属医院是国家卫生计生委西安交通大学第一附属医院是国家卫生计生委
+              </Text>
+            </View>
+          </View>
+
+          {/* 通知公告 */}
+          <View className='hos-detail-doctor-intr-container'>
+            <Itemnavheader
+              headerIcon={require('@assets/images/home/home_threej_hospital.png')}
+              headerTitle='通知公告'
+              headerRightTitle='关于2019年国庆节工作安排的通知'
+              onHederNavClick={this.doctorIntrClick.bind(this)}
+            />
           </View>
 
         </View>

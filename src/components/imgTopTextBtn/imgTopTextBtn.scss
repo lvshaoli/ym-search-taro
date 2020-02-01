@@ -1,0 +1,16 @@
+@import '@styles/theme.scss';
+.imgTopTextBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-bottom-text {
+  font-size: 20px;
+  color: $text-color-light;
+}
+
+.right-bottom-text-container {
+  margin-top: -10px;
+}
