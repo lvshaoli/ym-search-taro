@@ -107,7 +107,7 @@ class Hosdetail extends Component {
               </View>
 
               <View className='hos-detail-dept-content-container'>
-                <Text className='hos-detail-dept-content'>男科，妇产科，肿瘤科，器官移植科，男科，妇产科，肿瘤科，器官移植科，男科，妇产科，肿瘤科，器官移植科</Text>
+                <View className='hos-detail-dept-content'>男科，妇产科，肿瘤科，器官移植科，男科，妇产科，肿瘤科，器官移植科，男科，妇产科，肿瘤科，器官移植科</View>
               </View>
 
             </View>

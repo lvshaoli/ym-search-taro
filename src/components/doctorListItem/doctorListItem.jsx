@@ -57,9 +57,9 @@ class Doctorlistitem extends Component {
           </View>
           {/* 描述 */}
           <View className='doctor-list-item-right-desc'>
-            <Text className='doctor-list-item-right-desc-text'>
+            <View className='doctor-list-item-right-desc-text'>
               早产、低体重儿、新生儿黄疸、新生儿肺炎早产、低体重儿、新生儿黄疸、新生儿肺炎早产、低体重儿、新生儿黄疸、新生儿肺炎
-            </Text>
+            </View>
           </View>
 
           <View className='doctor-list-item-line'>

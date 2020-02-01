@@ -51,6 +51,9 @@
 }
 
 .hos-detail-dept-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .hos-detail-dept-title-text {
   font-size: 28px;
@@ -65,6 +68,9 @@
 .hos-detail-dept-content-container {
   width: 550px;
   margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .hos-detail-space-between {
