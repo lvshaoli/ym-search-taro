@@ -28,6 +28,7 @@ class App extends Component {
       'pages/searchContentView/searchContentView', // 搜索结果
       'pages/hostipallist/hostipallist', // 医院列表
       'pages/hosDetail/hosDetail', // 医院详情
+      'pages/hosDetail/hosDeptSelect/hosDeptSelect', // 科室选择
     ],
     window: {
       backgroundTextStyle: 'light',

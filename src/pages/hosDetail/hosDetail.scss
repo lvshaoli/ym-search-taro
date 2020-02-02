@@ -162,3 +162,31 @@
   font-size: 28px;
   color: $text-color-light;
 }
+
+
+// sheet 样式覆盖
+
+.at-action-sheet__container {
+  border-radius: 26px;
+  width: 90%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.at-action-sheet__item {
+  font-size: 32px;
+  color: $primary-color;
+}
+
+.at-action-sheet__footer {
+  font-size: 32px;
+  color: $primary-color;
+  border-radius: 26px;
+  margin-top: 16px;
+  border-top: 0 solid black;
+  background-color: #434040;
+}
+.at-action-sheet__body {
+  border-radius: 26px;
+  background-color: #434040;
+}
