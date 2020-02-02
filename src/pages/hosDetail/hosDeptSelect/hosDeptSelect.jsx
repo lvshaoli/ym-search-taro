@@ -5,8 +5,9 @@
  * @DESC: '请描述本页面功能'
  **/
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
-// import PropTypes from 'prop-types'
+import { View } from '@tarojs/components'
+import { AtIndexes } from 'taro-ui'
+import { navigateTo } from '@utils/navUtils'
 // import { connect } from '@tarojs/redux'
 import './hosDeptSelect.scss'
 
@@ -14,21 +15,38 @@ import './hosDeptSelect.scss'
 // }), (dispatch) => ({  
 // }))
 class Hosdeptselect extends Component {
-  // static propTypes = {
-  //   children: PropTypes.any,
-  //   data: PropTypes.array
-  // }
-  //
-  // static defaultProps = {
-  //   data: []
-  // }
   
-  // config = {
-  // navigationBarTitleText: '首页'
-  // }
+  config = {
+    navigationBarTitleText: '医院科室列表'
+  }
     
   constructor () {
     super(...arguments)
+    this.state = {
+      deptList: [{
+        title: 'A',
+        key: 'A',
+        items: [
+          {
+            'name': '阿坝'
+            // 此处可加其他业务字段
+          },
+          {
+            'name': '阿拉善'
+          }]
+      },
+      {
+        title: 'B',
+        key: 'B',
+        items: [
+          {
+            'name': '北京'
+          },
+          {
+            'name': '保定'
+          }]
+      }]
+    }
   }
 
   componentWillReceiveProps (nextProps) {
@@ -41,10 +59,18 @@ class Hosdeptselect extends Component {
 
   componentDidHide () { }
 
+  deptClick = (item) => {
+    console.log('---', item)
+    navigateTo('/pages/hosDetail/hosDeptDetail/hosDeptDetail')
+  }
+
   render () {
     return (
-      <View className='hosDeptSelect'>
-        <Text>hosDeptSelect</Text>
+      <View className='hosDeptSelect' style='height:100vh'>
+        <AtIndexes
+          list={this.state.deptList}
+          onClick={this.deptClick}
+        />
       </View>
     )
   }

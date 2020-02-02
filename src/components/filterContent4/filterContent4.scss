@@ -1,0 +1,53 @@
+@import '@styles/theme.scss';
+.filterContent4 {
+  display: flex;
+  flex-direction: row;
+  height: 768px;
+  background-color: white;
+}
+
+.filter-content4-left-container {
+  width: 210px;
+  background-color: #F2F2F2;
+}
+
+.content4-left-item {
+  width: 210px;
+  height: 106px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: $text-color;
+}
+
+.content4-left-item-selected {
+  background-color: white;
+}
+
+.content4-left-item-unselected {
+  background-color: #F2F2F2;
+}
+
+.filter-content4-right-container {
+  flex: 1;
+}
+.content4-right-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1PX solid #F2F2F2;
+  font-size: 28px;
+}
+
+.right-item-text-select {
+  color: $primary-color;
+}
+
+.right-item-text-unselect {
+  color: $text-color;
+}

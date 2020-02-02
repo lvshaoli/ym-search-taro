@@ -1,0 +1,32 @@
+@import '@styles/theme.scss';
+.listFilterPop {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999999999999;
+}
+
+.doctorListFilter {
+  background-color: white;
+  padding: 0px 30px 20px 30px;
+}
+
+.doctor-list-filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.list-filter-pop-top-unselect-text {
+  color: $text-color;
+  font-size: 28px;
+}
+
+.list-filter-pop-top-select-text {
+  color: $primary-color;
+  font-size: 28px;
+}

@@ -6,11 +6,11 @@
  **/
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
+import FilterContent1 from '@components/filterContent1/filterContent1'
+import FilterContent2 from '@components/filterContent2/filterContent2'
+import FilterContent3 from '@components/filterContent3/filterContent3'
 // import PropTypes from 'prop-types'
 import './listFilterPop.scss'
-import FilterContent1 from './filterContent1/filterContent1'
-import FilterContent2 from './filterContent2/filterContent2'
-import FilterContent3 from './filterContent3/filterContent3'
 
 class Listfilterpop extends Component {
   // static propTypes = {

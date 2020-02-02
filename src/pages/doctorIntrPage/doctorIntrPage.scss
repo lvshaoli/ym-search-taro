@@ -1,0 +1,21 @@
+@import '@styles/theme.scss';
+.doctorIntrPage {
+}
+
+.hos-list-item-search-bar-container {
+  background-color: white;
+  padding: 32px 30px 24px 30px;
+  position: relative;
+}
+
+.hos-list-item-container {
+  background-color: white;
+  padding: 0 30px;
+  height: 100vh;
+  margin-top: 20px;
+}
+
+.hos-list-item-text {
+  font-size: 28px;
+  color: $text-color;
+}

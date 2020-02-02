@@ -1,0 +1,56 @@
+@import '@styles/theme.scss';
+.hosDeptDetail {
+}
+.hos-dept-detail-deptIntr-container {
+  padding: 0 30px 30px 30px;
+}
+.hos-dept-detail-deptIntr-text {
+  font-size: 30px;
+  color: $text-color;
+}
+
+.hos-dept-detail-more-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.hos-dept-detail-more-img {
+  width: 24px;
+  height: 16px;
+}
+
+.hos-dept-detail-intr-content-container {
+  @include lamp-clamp(2)
+}
+
+.hos-dept-detail-intr-content-text {
+  font-size: 28px;
+  color: $text-color-light;
+}
+
+.hos-detail-doctor-intr-container {
+  background-color: white;
+  padding: 32px 30px;
+  margin-bottom: 20px;
+}
+
+.hos-dept-detail-top-list-container {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.at-list__item .item-extra__info {
+  color: $text-color-light;
+  font-size: 28px;
+}
+
+.at-list__item {
+  font-size: 30px;
+}
+
+.at-list__item-extra {
+  max-width: 800px;
+}

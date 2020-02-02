@@ -53,6 +53,8 @@ class Hosdetail extends Component {
 
     doctorIntrClick () {
       console.log('doctorIntrClick')
+      navigateTo('/pages/doctorIntrPage/doctorIntrPage')
+
     }
 
   //  医院地址点击事件

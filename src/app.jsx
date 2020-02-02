@@ -29,6 +29,8 @@ class App extends Component {
       'pages/hostipallist/hostipallist', // 医院列表
       'pages/hosDetail/hosDetail', // 医院详情
       'pages/hosDetail/hosDeptSelect/hosDeptSelect', // 科室选择
+      'pages/hosDetail/hosDeptDetail/hosDeptDetail', // 科室详情
+      'pages/doctorIntrPage/doctorIntrPage', // 医生列表页
     ],
     window: {
       backgroundTextStyle: 'light',
