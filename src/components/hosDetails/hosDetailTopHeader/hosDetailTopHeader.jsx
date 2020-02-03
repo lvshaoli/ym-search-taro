@@ -79,7 +79,7 @@ class Hosdetailtopheader extends Component {
         <View className='hos-detail-topheader-right-bottom-container'>
           <View className='hos-detail-topheader-inner-contaner'>
             <Commonimage
-              imageSource={require('@assets/images/home/home_jddyfsyy.png')}
+              imageSource={require('@assets/images/hos/hos_inner_nav.png')}
               imageStyle={{'width': `${Taro.pxTransform(46)}`,
                 'height': Taro.pxTransform(46)}}
             />

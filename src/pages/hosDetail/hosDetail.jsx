@@ -108,34 +108,37 @@ class Hosdetail extends Component {
 
           <View className='hos-detail-address-left-container'>
             <Commonimage
-              imageSource={require('@assets/images/home/home_jddyfsyy.png')}
+              imageSource={require('@assets/images/hos/common_icon_nav.png')}
               imageStyle={{
-                'width': `${Taro.pxTransform(30)}`,
+                'width': `${Taro.pxTransform(26)}`,
                 'height': Taro.pxTransform(30),
                 'margin-right': Taro.pxTransform(15),
                 'margin-top': Taro.pxTransform(15)
               }}
             />
 
-            <View>
-              <View>
-                <Text className='hos-detail-address-left-top-text'>雁塔区雁塔西路277号西安交通第一附属医院内</Text>
-              </View>
-
-              <View>
-                <Text className='hos-detail-address-left-bottom-text'>距离您6.4km，点击查看路线</Text>
-              </View>
+            <View className='hos-detail-address-text-container'>
+              <View className='hos-detail-address-left-top-text'>雁塔区雁塔西路277号西安交通第一附属医院内</View>
+              <View className='hos-detail-address-left-bottom-text'>距离您6.4km，点击查看路线</View>
             </View>
 
           </View>
 
           <View className='hos-detail-address-right-container'>
             <Commonimage
-              imageSource={require('@assets/images/home/home_jddyfsyy.png')}
+              imageSource={require('@assets/images/hos/common_phone_flag.png')}
               imageStyle={{'width': `${Taro.pxTransform(40)}`,
                 'height': Taro.pxTransform(40)}}
             />
-
+            <Commonimage
+              imageSource={require('@assets/images/hos/hos_icon_jizhen.png')}
+              imageStyle={{
+                'width': Taro.pxTransform(48),
+                'height': Taro.pxTransform(26),
+                'position': 'absolute',
+                'left': 0
+              }}
+            />
           </View>
 
         </View>
@@ -183,7 +186,7 @@ class Hosdetail extends Component {
 
             <View className='hos-detail-doctor-img-container'>
               <Commonimage
-                imageSource={require('@assets/images/home/home_jddyfsyy.png')}
+                imageSource={require('@assets/images/hos/hos_guah.png')}
                 imageStyle={{
                   'width': `${Taro.pxTransform(28)}`,
                   'height': Taro.pxTransform(28),
@@ -192,19 +195,17 @@ class Hosdetail extends Component {
 
             </View>
 
-            <View>
-              <View>
-                <Text className='hos-detail-dept-content'>预约挂号</Text>
-              </View>
-
+            <View className='hos-center-dept-desc-container'>
+              <View className='hos-detail-dept-content'>预约挂号</View>
               <View className='hos-detail-center-label-container'>
                 <View className='hos-detail-label-container'>
+                  <Image className='hos-select-flag-icon' src={require('@assets/images/hos/hos_select_flag.png')} />
                   <Text className='hos-detail-label-text'>
                       预约免费
                   </Text>
                 </View>
-
                 <View className='hos-detail-label-container'>
+                  <Image className='hos-select-flag-icon' src={require('@assets/images/hos/hos_select_flag.png')} />
                   <Text className='hos-detail-label-text'>
                       真实号源
                   </Text>
@@ -223,11 +224,17 @@ class Hosdetail extends Component {
           {/* 微信  电话 */}
 
           <View className='hos-detail-wechat-phone-container'>
-            <Imgtoptextbtn />
+            <Imgtoptextbtn
+              descText='电话'
+              imgSource={require('@assets/images/hos/hos_phone_icon.png')}
+            />
             <View className='hos-detail-wechat-line'>
               <Text></Text>
             </View>
-            <Imgtoptextbtn />
+            <Imgtoptextbtn
+              descText='公众号'
+              imgSource={require('@assets/images/hos/hos_wechat_icon.png')}
+            />
           </View>
 
         </View>
@@ -237,10 +244,12 @@ class Hosdetail extends Component {
         <View className='hos-detail-doctor-intr-container hos-detail-flex'>
           <View className='hos-detail-wd-label-container'>
             <Commonimage
-              imageSource={require('@assets/images/home/home_jddyfsyy.png')}
+              imageSource={require('@assets/images/hos/hos_question_icon.png')}
               imageStyle={{
                 'width': `${Taro.pxTransform(56)}`,
                 'height': Taro.pxTransform(32),
+                'position': 'absolute',
+                'top': '3px'
               }}
             />
           </View>
@@ -270,7 +279,6 @@ class Hosdetail extends Component {
         {/* 医生介绍 */}
         <View className='hos-detail-doctor-intr-container'>
           <Itemnavheader
-            headerIcon={require('@assets/images/home/home_threej_hospital.png')}
             headerTitle='医生介绍'
             headerRightTitle='全部'
             onHederNavClick={this.doctorIntrClick.bind(this)}
@@ -290,7 +298,6 @@ class Hosdetail extends Component {
 
         <View className='hos-detail-doctor-intr-container'>
           <Itemnavheader
-            headerIcon={require('@assets/images/home/home_threej_hospital.png')}
             headerTitle='医院介绍'
             headerRightTitle=''
             onHederNavClick={() => {
@@ -309,7 +316,6 @@ class Hosdetail extends Component {
         {/* 通知公告 */}
         <View className='hos-detail-doctor-intr-container'>
           <Itemnavheader
-            headerIcon={require('@assets/images/home/home_threej_hospital.png')}
             headerTitle='通知公告'
             headerRightTitle='关于2019年国庆节工作安排的通知'
             onHederNavClick={() => {

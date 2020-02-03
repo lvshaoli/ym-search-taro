@@ -11,6 +11,13 @@
 .hos-detail-doctor-intr-items {
 }
 
+.hos-detail-address-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  max-width: 548px;
+}
+
 .hos-detail-address-container {
   padding: 30px;
   background-color: white;
@@ -38,7 +45,7 @@
 }
 
 .hos-detail-address-right-container {
-  margin-left: 20px;
+  position: relative;
 }
 
 .hos-detail-doctor-dept-container {
@@ -90,6 +97,9 @@
 }
 .hos-detail-doctor-img-container {
   margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 9px;
 }
 .hos-detail-label-container {
   margin-right: 24px;
@@ -149,6 +159,7 @@
 .hos-detail-wd-label-container {
   width: 56px;
   height: 32px;
+  position: relative;
   margin-right: 16px;
 }
 
@@ -189,4 +200,15 @@
 .at-action-sheet__body {
   border-radius: 26px;
   background-color: #434040;
+}
+
+.hos-select-flag-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.hos-center-dept-desc-container {
+  display: flex;
+  flex-direction: column;
 }

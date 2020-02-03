@@ -10,6 +10,7 @@ import Pulltopushrefresh from '@components/pullToPushRefresh/pullToPushRefresh'
 import Commonhositem from '@components/commonhositem/commonhositem'
 import Searchbar from '@components/searchBar/searchBar'
 import PharmacyListFilter from '@components/pharmacyListFilter/pharmacyListFilter'
+import { navigateTo } from '@utils/navUtils'
 import './pharmacyLists.scss'
 
 class Pharmacylists extends Component {
@@ -69,6 +70,7 @@ class Pharmacylists extends Component {
           <Pulltopushrefresh onDown={this.downPull} onLoadMore={this.loadMorePush}>
             <Commonhositem
               onItemClick={() => {
+                navigateTo('/pages/pharmacyDetailPage/pharmacyDetailPage')
               }}
             />
             <Commonhositem />

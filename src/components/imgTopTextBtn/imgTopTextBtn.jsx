@@ -6,16 +6,16 @@
  **/
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import Commonimage from '@components/commonimage/commonimage'
 import './imgTopTextBtn.scss'
 
 class Imgtoptextbtn extends Component {
-  // static propTypes = {
-  //   children: PropTypes.any,
-  //   data: PropTypes.array
-  // }
-  //
+  static propTypes = {
+    descText: PropTypes.string,
+    imgSource: PropTypes.string
+  }
+
   // static defaultProps = {
   //   data: []
   // }
@@ -38,11 +38,11 @@ class Imgtoptextbtn extends Component {
     return (
       <View className='imgTopTextBtn'>
         <Commonimage
-          imageSource={require('@assets/images/home/home_jddyfsyy.png')}
-          imageStyle={{'width': `${Taro.pxTransform(46)}`,
-            'height': Taro.pxTransform(46)}}
+          imageSource={this.props.imgSource}
+          imageStyle={{'width': `${Taro.pxTransform(40)}`,
+            'height': Taro.pxTransform(38)}}
         />
-        <View className='right-bottom-text'>院内导航</View>
+        <View className='right-bottom-text'>{this.props.descText}</View>
       </View>
     )
   }

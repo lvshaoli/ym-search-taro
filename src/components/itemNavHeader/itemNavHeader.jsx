@@ -35,7 +35,7 @@ class Itemnavheader extends Component {
     return (
       <View className='itemNavHeader'>
         <View className='item-nav-header-left'>
-          <Image className='item-nav-header-left-image' src={headerIcon} />
+          {headerIcon && <Image className='item-nav-header-left-image' src={headerIcon} /> }
           <Text className='item-nav-header-left-text'>{ headerTitle }</Text>
         </View>
 
