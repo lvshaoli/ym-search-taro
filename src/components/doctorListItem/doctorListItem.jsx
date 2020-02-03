@@ -7,15 +7,14 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import Commonimage from '@components/commonimage/commonimage'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import './doctorListItem.scss'
 
 class Doctorlistitem extends Component {
-  // static propTypes = {
-  //   children: PropTypes.any,
-  //   data: PropTypes.array
-  // }
-  //
+  static propTypes = {
+    onDocItemClick: PropTypes.func,
+  }
+
   // static defaultProps = {
   //   data: []
   // }
@@ -23,6 +22,7 @@ class Doctorlistitem extends Component {
     
   constructor () {
     super(...arguments)
+    this.state = {}
   }
 
   componentWillReceiveProps (nextProps) {
@@ -37,7 +37,10 @@ class Doctorlistitem extends Component {
 
   render () {
     return (
-      <View className='doctorListItem'>
+      <View className='doctorListItem' onClick={() => {
+        this.props.onDocItemClick && this.props.onDocItemClick()
+      }}
+      >
         <View>
           <Commonimage
             imageSource={require('@assets/images/home/home_jddyfsyy.png')}

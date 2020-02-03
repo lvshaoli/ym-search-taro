@@ -12,9 +12,15 @@
   margin-right: 24px;
 }
 
+.hos-detail-topheader-right-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .hos-detail-topheader-right-hosText {
   color: $text-color;
   font-size: 32px;
+  margin-bottom: 8px;
 }
 
 .hos-detail-tioheader-right-label {
@@ -26,6 +32,7 @@
 .hos-detail-topheader-right-date {
   font-size: 24px;
   color: $text-color-light;
+  margin-top: 16px;
 }
 
 .right-bottom-text {

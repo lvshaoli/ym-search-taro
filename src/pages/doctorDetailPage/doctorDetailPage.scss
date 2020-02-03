@@ -1,0 +1,61 @@
+@import '@styles/theme.scss';
+.doctorDetailPage {
+}
+
+.doctor-detail-page-top-person-intr-container {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.doctor-detail-top-left-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.doc-detail-top-left-right-container {
+  margin-left: 24px;
+}
+
+.top-left-right-name {
+  font-size: 32px;
+  color: $text-color;
+}
+
+.top-left-right-dept {
+  font-size: 26px;
+  color: $text-color-lighter;
+}
+
+.top-left-right-hos {
+  font-size: 28px;
+  color: $text-color-light;
+}
+
+.doctor-detail-top-dept-date-container {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.doctor-detail-top-dept-date-title {
+  font-size: 30px;
+  color: $text-color;
+}
+
+.doctor-detail-top-dept-date-subTitle {
+  font-size: 28px;
+  color: $text-color-light;
+}
+
+.doctor-detail-center-good-container {
+  padding: 0 30px 30px 30px;
+  background-color: white;
+  margin-bottom: 20px;
+}

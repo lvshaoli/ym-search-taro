@@ -245,8 +245,15 @@ class Hosdetail extends Component {
             />
           </View>
 
-          <View>
-
+          <View
+            onClick={() => {
+              navigateTo('/pages/hosQuestionList/hosQuestionList')
+            }}
+            className={{
+              'display': 'flex',
+              'flex-direction': 'column'
+            }}
+          >
             <View className='hos-detail-top-wd-container'>
               <Text className='hos-detail-top-wd-text'>西安市医保可以在这里住院吗？</Text>
               <Image className='hos-detail-left-image' src={require('@assets/images/home/home_common_right.png')} />
@@ -270,7 +277,11 @@ class Hosdetail extends Component {
           />
 
           <View className='hos-detail-doctor-intr-items'>
-            <Doctorlistitem />
+            <Doctorlistitem
+              onDocItemClick={() => {
+                navigateTo('/pages/doctorDetailPage/doctorDetailPage')
+              }}
+            />
             <Doctorlistitem />
           </View>
         </View>
@@ -282,7 +293,9 @@ class Hosdetail extends Component {
             headerIcon={require('@assets/images/home/home_threej_hospital.png')}
             headerTitle='医院介绍'
             headerRightTitle=''
-            onHederNavClick={this.doctorIntrClick.bind(this)}
+            onHederNavClick={() => {
+              navigateTo('/pages/hosIntrPage/hosIntrPage')
+            }}
           />
           <View className='hos-detail-hosIntr-container'>
             <Text className='hos-detail-hosIntr-text'>
@@ -299,7 +312,9 @@ class Hosdetail extends Component {
             headerIcon={require('@assets/images/home/home_threej_hospital.png')}
             headerTitle='通知公告'
             headerRightTitle='关于2019年国庆节工作安排的通知'
-            onHederNavClick={this.doctorIntrClick.bind(this)}
+            onHederNavClick={() => {
+              navigateTo('/pages/docNoticeListPage/docNoticeListPage')
+            }}
           />
         </View>
 

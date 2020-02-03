@@ -77,6 +77,7 @@ class Hostipallist extends Component {
         <View className='hos-list-item-search-bar-container'>
           <Searchbar
             onBarClick={this.searchResClick.bind(this)}
+            focus={false}
           />
         </View>
         <View className='hos-list-item-search-filter-container'>

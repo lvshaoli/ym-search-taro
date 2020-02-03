@@ -59,6 +59,7 @@ class Index extends Component {
             imageSource: require('@assets/images/home/home_mediacal_store.png'),
             onItemClick: () => {
               console.log('药店')
+              navigateTo('/pages/pharmacylists/pharmacylists')
             }},
           {name: '养老',
             imageSource: require('@assets/images/home/home_socal_big_perosn.png'),
@@ -278,9 +279,11 @@ class Index extends Component {
             <View>
               <Commonhositem
                 renderGroup={<Chinesebtngroup />}
+                deptLabelList={['骨科', '儿科']}
               />
               <Commonhositem
                 renderGroup={<Chinesebtngroup />}
+                deptLabelList={['内科', '儿科']}
               />
             </View>
 

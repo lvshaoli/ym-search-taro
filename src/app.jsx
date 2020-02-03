@@ -31,6 +31,12 @@ class App extends Component {
       'pages/hosDetail/hosDeptSelect/hosDeptSelect', // 科室选择
       'pages/hosDetail/hosDeptDetail/hosDeptDetail', // 科室详情
       'pages/doctorIntrPage/doctorIntrPage', // 医生列表页
+      'pages/doctorDetailPage/doctorDetailPage', // 医生详情
+      'pages/hosIntrPage/hosIntrPage', // 医院介绍
+      'pages/docNoticeListPage/docNoticeListPage', // 通知公告列表
+      'pages/docnoticedetailpage/docnoticedetailpage', // 通知详情
+      'pages/hosQuestionList/hosQuestionList', // 问答列表
+      'pages/pharmacylists/pharmacylists', // 药店列表
     ],
     window: {
       backgroundTextStyle: 'light',

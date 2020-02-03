@@ -13,10 +13,12 @@ class Searchbar extends Component {
   static propTypes = {
     onBarClick: PropTypes.any, // search click
     searchPlaceholder: PropTypes.string, // placeholder
+    focus: PropTypes.bool, // 是否聚焦
   }
 
   static defaultProps = {
-    searchPlaceholder: '大家都在搜:皮肤病'
+    searchPlaceholder: '大家都在搜:皮肤病',
+    focus: true
   }
   constructor () {
     super(...arguments)
@@ -57,7 +59,7 @@ class Searchbar extends Component {
           value={this.state.searchVal}
           // onChange={this.onInputChange.bind(this)}
           onInput={this.onInputChange.bind(this)}
-          focus
+          focus={this.props.focus}
         />
         <Image
           className='search-bar-icon'

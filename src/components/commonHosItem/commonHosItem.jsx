@@ -14,7 +14,8 @@ import './commonHosItem.scss'
 class Commonhositem extends Component {
   static propTypes = {
     renderGroup: PropTypes.any,
-    onItemClick: PropTypes.func
+    onItemClick: PropTypes.func,
+    deptLabelList: PropTypes.array,
   }
   //
   // static defaultProps = {
@@ -58,14 +59,17 @@ class Commonhositem extends Component {
 
           {/* 3*/}
           <View className='common-hos-item-dept-container'>
-            <Commonborderbtn
-              commonBorderText='骨科'
-              btnType='border-small'
-            />
-            <Commonborderbtn
-              commonBorderText='骨科'
-              btnType='border-small'
-            />
+            {
+              this.props.deptLabelList && this.props.deptLabelList.map((item, index) => {
+                return (
+                  <Commonborderbtn
+                    key={index}
+                    commonBorderText={item}
+                    btnType='border-small'
+                  />
+                )
+              })
+            }
           </View>
 
           <View className='common-hos-item-btn-container'>{ this.props.renderGroup }</View>

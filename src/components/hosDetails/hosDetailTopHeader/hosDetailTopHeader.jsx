@@ -61,18 +61,18 @@ class Hosdetailtopheader extends Component {
         </View>
         {/* right */}
         <View className='hos-detail-topheader-right-container'>
-          <View>
-            <Text className='hos-detail-topheader-right-hosText'>西安交通大学第一附属医院</Text>
-          </View>
 
-          <View>
+          <View className='hos-detail-topheader-right-hosText'>西安交通大学第一附属医院</View>
+          <View style={{
+            'display': 'flex',
+            'flex-direction': 'row'
+          }}
+          >
             <Text className='hos-detail-tioheader-right-label'>三级甲等</Text>
             <Text className='hos-detail-tioheader-right-label'>综合医院</Text>
           </View>
 
-          <View>
-            <Text className='hos-detail-topheader-right-date'>门诊时间：周一至周日 08:00-18:00</Text>
-          </View>
+          <View className='hos-detail-topheader-right-date'>门诊时间：周一至周日 08:00-18:00</View>
         </View>
 
         {/* right */}
@@ -83,9 +83,7 @@ class Hosdetailtopheader extends Component {
               imageStyle={{'width': `${Taro.pxTransform(46)}`,
                 'height': Taro.pxTransform(46)}}
             />
-            <View>
-              <Text className='right-bottom-text'>院内导航</Text>
-            </View>
+            <View className='right-bottom-text'>院内导航</View>
           </View>
         </View>
       </View>

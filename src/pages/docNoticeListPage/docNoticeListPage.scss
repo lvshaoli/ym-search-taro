@@ -1,0 +1,34 @@
+@import '@styles/theme.scss';
+.docNoticeListPage {
+}
+
+.doc-noticelist-item {
+  padding: 30px;
+  background-color: white;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-noticeList-item-top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.doc-noticeList-item-top-title {
+  font-size: 30px;
+  color: $text-color;
+}
+
+.doc-noticeList-item-top-img {
+  width: 18px;
+  height: 24px;
+}
+
+.doc-noticeList-item-bottom-date {
+  font-size: 24px;
+  color: $text-color-light;
+}
