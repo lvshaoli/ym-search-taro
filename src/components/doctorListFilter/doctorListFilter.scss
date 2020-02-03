@@ -30,3 +30,15 @@
   color: $primary-color;
   font-size: 28px;
 }
+
+.list-filter-pop-fx-icon {
+  width: 18px;
+  height: 12px;
+  margin-left: 16px;
+}
+
+.list-filter-pop-fx-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

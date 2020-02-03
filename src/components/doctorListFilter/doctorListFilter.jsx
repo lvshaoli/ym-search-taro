@@ -5,7 +5,7 @@
  * @DESC: '请描述本页面功能'
  **/
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text, Image } from '@tarojs/components'
 import FilterContent4 from '@components/filterContent4/filterContent4'
 import FilterContent3 from '@components/filterContent3/filterContent3'
 // import PropTypes from 'prop-types'
@@ -44,6 +44,7 @@ class Doctorlistfilter extends Component {
       <View className='doctorListFilter'>
         <View className='doctor-list-filter-container'>
           <View
+            className='list-filter-pop-fx-container'
             onClick={() => {
               this.setState({
                 allDept: !this.state.allDept,
@@ -57,8 +58,18 @@ class Doctorlistfilter extends Component {
                   ? 'list-filter-pop-top-select-text'
                   : 'list-filter-pop-top-unselect-text'
               }
-            >全部科室</Text></View>
+            >全部科室</Text>
+            <Image
+              className='list-filter-pop-fx-icon'
+              src={
+                this.state.allDept
+                  ? require('@assets/images/hos/common_filter_up_select.png')
+                  : require('@assets/images/hos/common_filter_down_icon.png')
+              }
+            />
+          </View>
           <View
+            className='list-filter-pop-fx-container'
             onClick={() => {
               this.setState({
                 filterDoc: !this.state.filterDoc,
@@ -73,6 +84,14 @@ class Doctorlistfilter extends Component {
                   : 'list-filter-pop-top-unselect-text'
               }
             >筛选</Text>
+            <Image
+              className='list-filter-pop-fx-icon'
+              src={
+                this.state.filterDoc
+                  ? require('@assets/images/hos/common_filter_up_select.png')
+                  : require('@assets/images/hos/common_filter_down_icon.png')
+              }
+            />
           </View>
         </View>
 
