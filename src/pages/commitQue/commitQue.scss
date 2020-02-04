@@ -1,0 +1,30 @@
+@import '@styles/theme.scss';
+.commitQue {
+  padding: 30px;
+  background-color: white;
+}
+
+.at-textarea {
+  border-top: 0 solid white;
+  border-bottom: 0 solid white;
+  border-left: 0 solid white;
+  border-right: 0 solid white;
+}
+
+.placeholder {
+  font-size: 30px;
+  color: $text-color-lighter;
+}
+
+.hos-quetion-btn {
+  margin-top: 30px;
+  z-index: 999999;
+  .at-button--primary {
+    background-color: $primary-color;
+    border: 0px solid $primary-color;
+    border-radius: 16px;
+  }
+  .at-button--disabled {
+    background-color: #F2F2F2;
+  }
+}

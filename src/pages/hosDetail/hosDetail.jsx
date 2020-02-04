@@ -127,8 +127,11 @@ class Hosdetail extends Component {
           <View className='hos-detail-address-right-container'>
             <Commonimage
               imageSource={require('@assets/images/hos/common_phone_flag.png')}
-              imageStyle={{'width': `${Taro.pxTransform(40)}`,
-                'height': Taro.pxTransform(40)}}
+              imageStyle={{
+                'width': `${Taro.pxTransform(40)}`,
+                'height': Taro.pxTransform(40),
+                'margin-top': Taro.pxTransform(10)
+              }}
             />
             <Commonimage
               imageSource={require('@assets/images/hos/hos_icon_jizhen.png')}
@@ -136,7 +139,8 @@ class Hosdetail extends Component {
                 'width': Taro.pxTransform(48),
                 'height': Taro.pxTransform(26),
                 'position': 'absolute',
-                'left': 0
+                'left': Taro.pxTransform(5),
+                'top': Taro.pxTransform(0)
               }}
             />
           </View>
@@ -280,7 +284,7 @@ class Hosdetail extends Component {
         <View className='hos-detail-doctor-intr-container'>
           <Itemnavheader
             headerTitle='医生介绍'
-            headerRightTitle='全部'
+            headerRightTitle=''
             onHederNavClick={this.doctorIntrClick.bind(this)}
           />
 

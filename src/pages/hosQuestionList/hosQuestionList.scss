@@ -5,4 +5,66 @@
 .hos-question-list-item {
   padding: 30px;
   background-color: white;
+  margin-bottom: 20px;
+}
+
+.hos-question-item-first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hos-question-item-first-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hos-question-item-first-right {
+  display: flex;
+  flex-direction: row;
+  font-size: 26px;
+  color: $text-color-lighter;
+}
+
+.hos-question-item-first-left-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+}
+
+.hos-question-item-first-left-text {
+  font-size: 30px;
+  color: $text-color;
+}
+
+.hos-question-item-second-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hos-question-item-second-text {
+  font-size: 24px;
+  color: $text-color-lighter;
+}
+
+.hos-question-item-third-container {
+  font-size: 28px;
+  color: $text-color-light;
+  margin-left: 40px;
+}
+
+.hos-quetion-btn {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  z-index: 999999;
+  .at-button--primary {
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 16px;
+  }
 }

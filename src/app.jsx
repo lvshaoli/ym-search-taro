@@ -36,6 +36,9 @@ class App extends Component {
       'pages/docNoticeListPage/docNoticeListPage', // 通知公告列表
       'pages/docnoticedetailpage/docnoticedetailpage', // 通知详情
       'pages/hosQuestionList/hosQuestionList', // 问答列表
+      'pages/questionDetail/questionDetail', // 问题详情
+      'pages/commitQue/commitQue', // 提问
+      'pages/answerQue/answerQue', // 回答问题
       'pages/pharmacylists/pharmacylists', // 药店列表
       'pages/pharmacyDetailPage/pharmacyDetailPage', // 药店详情
     ],
