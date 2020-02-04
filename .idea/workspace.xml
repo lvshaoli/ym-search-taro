@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="089891b2-4e92-4850-8175-12cf949c0b8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/doctorListFilter/doctorListFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/doctorListFilter/doctorListFilter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/doctorListFilter/doctorListFilter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/doctorListFilter/doctorListFilter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/listfilterpop/listfilterpop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/listfilterpop/listfilterpop.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/listfilterpop/listfilterpop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/listfilterpop/listfilterpop.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pharmacyListFilter/pharmacyListFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pharmacyListFilter/pharmacyListFilter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pharmacyListFilter/pharmacyListFilter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pharmacyListFilter/pharmacyListFilter.scss" afterDir="false" />
-    </list>
+    <list default="true" id="089891b2-4e92-4850-8175-12cf949c0b8c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -58,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/pharmacyListFilter/pharmacyListFilter.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="77">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -188,6 +181,17 @@
             <path>
               <item name="ym-search-taro" type="b2602c69:ProjectViewProjectNode" />
               <item name="ym-search-taro" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ym-search-taro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ym-search-taro" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="weapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ym-search-taro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ym-search-taro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -307,12 +311,12 @@
       <workItem from="1580092391781" duration="4622000" />
       <workItem from="1580522018686" duration="17092000" />
       <workItem from="1580602696686" duration="18035000" />
-      <workItem from="1580689001725" duration="18012000" />
+      <workItem from="1580689001725" duration="18172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157178000" />
+    <option name="totallyTimeSpent" value="157338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
@@ -713,8 +717,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pharmacyListFilter/pharmacyListFilter.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="77">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
