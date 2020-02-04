@@ -1,7 +1,11 @@
 @import '@styles/theme.scss';
 .answerQue {
+}
+
+.answer-que-top-container {
   padding: 30px;
   background-color: white;
+  margin-bottom: 20px;
 }
 
 .question-detail-top-top-conatiner {
@@ -9,6 +13,7 @@
   flex-direction: row;
   align-items: center;
 }
+
 
 .question-detail-top-left-img {
   width: 72px;
@@ -31,16 +36,11 @@
   color: $text-color-lighter;
 }
 
-
-.question-detail-top-container {
-  background-color: white;
-  margin-bottom: 20px;
-}
 .question-detail-top-second-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 15px;
+  background-color: white;
 }
 .hos-question-item-first-left-img {
   width: 30px;
@@ -53,9 +53,3 @@
   color: $text-color;
 }
 
-.render-pic-view-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 24px;
-  justify-content: space-around;
-}

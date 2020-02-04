@@ -29,45 +29,25 @@ class Answerque extends Component {
 
     componentDidHide () { }
 
-  renderQuestionPersonInfo = () => {
-    return (
-      <View className='question-detail-top-top-conatiner'>
-        <Image className='question-detail-top-left-img' src={require('@assets/images/hos/quest-avtor.png')} />
-        <View className='question-detail-top-right-container'>
-          <View className='question-detail-top-right-name'>张**</View>
-          <View className='question-detail-top-right-date'>2019-03-04</View>
-        </View>
-      </View>
-    )
-  }
-
   // 问题介绍
   renderQuestionIntrComponents = () => {
     return (
-      <View className='question-detail-top-container'>
-        { this.renderQuestionPersonInfo() }
-        {/* 第二行 */}
-        <View className='question-detail-top-second-container'>
-          <Image className='hos-question-item-first-left-img' src={require('@assets/images/hos/question_wen.png')} />
-          <Text className='hos-question-item-first-left-text'>问题问问问问问</Text>
-        </View>
+      <View className='question-detail-top-second-container'>
+        <Image className='hos-question-item-first-left-img' src={require('@assets/images/hos/question_wen.png')} />
+        <Text className='hos-question-item-first-left-text'>问题问问问问问</Text>
       </View>
     )
   }
 
-  renderPicView = () => {
-    return (
-      <View className='render-pic-view-container'>
-
-      </View>
-    )
-  }
 
   render () {
     return (
       <View className='answerQue'>
-        { this.renderQuestionIntrComponents() }
-        { this.renderPicView() }
+        <View className='answer-que-top-container'>
+          { this.renderQuestionIntrComponents() }
+        </View>
+
+
       </View>
     )
   }

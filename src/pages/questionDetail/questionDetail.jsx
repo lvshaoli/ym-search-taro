@@ -53,6 +53,7 @@ class Questiondetail extends Component {
             <Image className='hos-question-item-first-left-img' src={require('@assets/images/hos/question_wen.png')} />
             <Text className='hos-question-item-first-left-text'>问题问问问问问</Text>
           </View>
+          { this.renderPicView() }
         </View>
       )
     }
@@ -68,31 +69,63 @@ class Questiondetail extends Component {
                 可以的，支持省市居民、职工医保、农合医保可以的，支持省市居民、职工医保、农合医保
                 可以的，支持省市居民、职工医保、农合医保
          </View>
+
        </View>
      )
    }
 
-   render () {
-     return (
-       <View className='questionDetail'>
-         { this.renderQuestionIntrComponents() }
-         <View className='question-detail-content-count'>共26个回答</View>
-         {this.renderAnswerItem()}
-         {this.renderAnswerItem()}
-         {this.renderAnswerItem()}
+  //  border按钮
+  renderBorderBtn = () => {
+    return (
+      <View className='render-border-btn-container'>
+        <Text className='render-border-btn-text'>我要回答</Text>
+      </View>
+    )
+  }
 
-         <View className='question-detail-quetion-btn'>
-           <AtButton
-             type='primary'
-             size='normal'
-             onClick={() => {
-               navigateTo('/pages/answerQue/answerQue')
-             }}
-           >我要回答</AtButton>
-         </View>
-       </View>
-     )
-   }
+  renderNoContent = () => {
+    return (
+      <View className='answer-que-bottom-container'>
+        <View className='answer-que-bottom-text'>暂无人回答，快来回答吧～</View>
+        { this.renderBorderBtn() }
+      </View>
+    )
+  }
+
+  // 图片展示
+  renderPicView = () => {
+    return (
+      <View className='render-pic-view-container'>
+        <Image className='render-pic-view-img' src={require('@assets/images/home/home_jddyfsyy.png')} />
+        <Image className='render-pic-view-img' src={require('@assets/images/home/home_jddyfsyy.png')} />
+        <Image className='render-pic-view-img' src={require('@assets/images/home/home_jddyfsyy.png')} />
+      </View>
+    )
+  }
+
+  render () {
+    return (
+      <View className='questionDetail'>
+        { this.renderQuestionIntrComponents() }
+        {/* 没有回答时候展示 */}
+        {this.renderNoContent()}
+        <View className='question-detail-content-count'>共26个回答</View>
+        {this.renderAnswerItem()}
+        {this.renderAnswerItem()}
+        {this.renderAnswerItem()}
+
+        <View className='question-detail-quetion-btn'>
+          <AtButton
+            type='primary'
+            size='normal'
+            onClick={() => {
+              navigateTo('/pages/answerQue/answerQue')
+            }}
+          >我要回答</AtButton>
+        </View>
+      </View>
+    )
+  }
 }
 
 export default Questiondetail

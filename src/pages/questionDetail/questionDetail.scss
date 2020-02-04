@@ -90,3 +90,48 @@
     padding-top: -10px;
   }
 }
+
+.render-border-btn-container {
+  border: 2px solid #F55D01;
+  border-radius: 31px;
+  width: 246px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .render-border-btn-text {
+    color: #F55D01;
+    font-size: 30px;
+  }
+}
+
+
+.answer-que-bottom-container {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.answer-que-bottom-text {
+  font-size: 28px;
+  color: $text-color-light;
+  margin-bottom: 30px;
+}
+
+
+.render-pic-view-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+}
+
+
+.render-pic-view-img {
+  width: 219px;
+  height: 219px;
+  margin-right: 17px;
+}
