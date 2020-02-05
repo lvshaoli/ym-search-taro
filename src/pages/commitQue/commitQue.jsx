@@ -6,7 +6,8 @@
  **/
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { AtTextarea, AtImagePicker, AtButton } from 'taro-ui'
+import { AtTextarea, AtButton } from 'taro-ui'
+import Commonchooseimg from '@components/commonChooseImg/commonChooseImg'
 import './commitQue.scss'
 
 class Commitque extends Component {
@@ -19,14 +20,6 @@ class Commitque extends Component {
     super(...arguments)
     this.state = {
       value: '',
-      files: [
-        {
-          url: 'https://jimczj.gitee.io/lazyrepay/aragaki1.jpeg',
-        },
-        {
-          url: 'https://jimczj.gitee.io/lazyrepay/aragaki2.jpeg',
-        }
-      ],
       btnDisable: true
     }
   }
@@ -47,18 +40,6 @@ class Commitque extends Component {
     })
   }
 
-  onChange (files) {
-    this.setState({
-      files
-    })
-  }
-  onFail (mes) {
-    console.log(mes)
-  }
-  onImageClick (index, file) {
-    console.log(index, file)
-  }
-
   render () {
     return (
       <View className='commitQue'>
@@ -68,12 +49,10 @@ class Commitque extends Component {
           maxLength={50}
           placeholder='写下你的问题，来过这里的人会为你解答哦～'
         />
-        <AtImagePicker
-          length={3}
-          files={this.state.files}
-          onChange={this.onChange.bind(this)}
-          onFail={this.onFail.bind(this)}
-          onImageClick={this.onImageClick.bind(this)}
+        <Commonchooseimg
+          onImgPathCallBack={(imgList) => {
+            console.log('-----', imgList)
+          }}
         />
 
         <View className='hos-quetion-btn'>

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="089891b2-4e92-4850-8175-12cf949c0b8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/answerQue/answerQue.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/answerQue/answerQue.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/answerQue/answerQue.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/answerQue/answerQue.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/questionDetail/questionDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/questionDetail/questionDetail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/questionDetail/questionDetail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/questionDetail/questionDetail.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -23,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/answerQue/answerQue.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+            <state relative-caret-position="145">
+              <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
               <folding>
                 <element signature="e#88#134#0" expanded="true" />
               </folding>
@@ -168,44 +165,6 @@
               <item name="ym-search-taro" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ym-search-taro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ym-search-taro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ym-search-taro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ym-search-taro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ym-search-taro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ym-search-taro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="commonImage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ym-search-taro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ym-search-taro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ym-search-taro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ym-search-taro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="answerQue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ym-search-taro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ym-search-taro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="questionDetail" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -277,16 +236,15 @@
       <workItem from="1580522018686" duration="17092000" />
       <workItem from="1580602696686" duration="18035000" />
       <workItem from="1580689001725" duration="18172000" />
-      <workItem from="1580776597007" duration="14227000" />
+      <workItem from="1580776597007" duration="14723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171565000" />
+    <option name="totallyTimeSpent" value="172061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -687,8 +645,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/answerQue/answerQue.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        <state relative-caret-position="145">
+          <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
           <folding>
             <element signature="e#88#134#0" expanded="true" />
           </folding>

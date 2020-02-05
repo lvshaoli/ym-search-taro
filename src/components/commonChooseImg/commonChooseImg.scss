@@ -1,0 +1,41 @@
+@import '@styles/theme.scss';
+.commonChooseImg {
+}
+
+.common-choose-img-select-btn {
+  width: 144px;
+  height: 144px;
+}
+
+.common-choose-img-tip-text {
+  font-size: 24px;
+  color: $text-color-lighter;
+  margin-left: 16px;
+}
+
+.common-choose-img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.common-choose-img-select-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.common-choose-item-conatiner {
+  position: relative;
+  margin-right: 16px;
+}
+
+.common-choose-img-close {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+}

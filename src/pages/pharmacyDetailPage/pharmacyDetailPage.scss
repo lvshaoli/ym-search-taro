@@ -6,4 +6,151 @@
   padding: 30px;
   background-color: white;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.pharmacy-detail-intr-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.pharmacy-detail-intr-title {
+  font-size: 32px;
+  color: $text-color;
+}
+
+.pharmacy-detail-intr-subTitle {
+  font-size: 24px;
+  color: $text-color-light;
+  margin-top: 16px;
+}
+
+.render-service-addr-container {
+  padding: 30px;
+  background-color: white;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.render-srevice-addr-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.render-service-addr-left-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.render-ervice-addr-left-top-icon {
+  width: 26px;
+  height: 30px;
+}
+
+.render-service-addr-left-top-desc {
+  font-size: 28px;
+  color: $text-color;
+  margin-left: 16px;
+}
+
+.render-service-addr-left-bottom {
+  font-size: 24px;
+  color: $text-color-light;
+  margin-top: 16px;
+  margin-left: 42px;
+}
+
+.render-srevice-addr-right-img {
+  width: 40px;
+  height: 40px;
+}
+
+.render-service-items-container {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.render-service-items-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.render-service-items-top-img {
+  width: 28px;
+  height: 28px;
+}
+
+.render-service-items-top-title {
+  font-size: 28px;
+  color: $text-color-light;
+  margin-left: 16px;
+}
+
+.render-service-items-bottom {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.render-service-items-bottom-content {
+  color: $text-color;
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+
+.render-ques-ans-view {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.render-ques-ans-view-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.render-ques-ans-view-top-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.render-ques-ans-view-top-left-img {
+  width: 56px;
+  height: 32px;
+}
+
+.render-ques-ans-view-top-left-title {
+  font-size: 28px;
+  color: $text-color;
+  margin-left: 16px;
+}
+
+.render-ques-ans-view-top-right-icon {
+  width:17px;
+  height: 22px;
+}
+
+.render-ques-ans-view-bottom {
+  font-size: 26px;
+  color: $text-color-light;
+  margin-top: 16px;
+  @include lamp-clamp(1);
+  margin-left: 72px;
 }
