@@ -23,6 +23,10 @@ class Filtercontent2 extends Component {
 
   constructor () {
     super(...arguments)
+    this.state = {
+      filterList: ['综合排序', '离我最近'],
+      checkedItem: '综合排序'
+    }
   }
 
   componentWillReceiveProps (nextProps) {
@@ -38,9 +42,20 @@ class Filtercontent2 extends Component {
   render () {
     return (
       <View className='filterContent2'>
-        <Content2item />
-        <Content2item />
-        <Content2item />
+        {
+          this.state.filterList.map((item, index) => {
+            return <Content2item
+              key={index}
+              text={item}
+              checked={item === this.state.checkedItem}
+              onContentItemClick={() => {
+                this.setState({
+                  checkedItem: item
+                })
+              }}
+            />
+          })
+        }
       </View>
     )
   }

@@ -6,7 +6,7 @@
  **/
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
-import Hosdetailborderbtn from '@components/hosDetails/hosdetailborderbtn/hosdetailborderbtn'
+import Hosdetailborderbtn from '@components/hosdetailborderbtn/hosdetailborderbtn'
 import Commonimage from '@components/commonimage/commonimage'
 // import { connect } from '@tarojs/redux'
 import './doctorDetailPage.scss'

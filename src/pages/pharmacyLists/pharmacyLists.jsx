@@ -21,6 +21,26 @@ class Pharmacylists extends Component {
     
     constructor () {
       super(...arguments)
+      this.state = {
+        filter3Data: [
+          {
+            title: '',
+            sigle: false,
+            items: [
+              {
+                id: 1,
+                name: '离我最近',
+                checked: false,
+              },
+              {
+                id: 2,
+                name: '医生坐诊',
+                checked: true,
+              }
+            ]
+          }
+        ]
+      }
     }
 
     componentWillReceiveProps (nextProps) {
@@ -64,7 +84,12 @@ class Pharmacylists extends Component {
         </View>
 
         {/* 过滤 */}
-        <PharmacyListFilter />
+        <PharmacyListFilter
+          onContent3ItemClick={(item) => {
+            console.log('---onContent3ItemClick---', item)
+          }}
+          filter3Data={this.state.filter3Data}
+        />
 
         <View className='hos-list-item-container'>
           <Pulltopushrefresh onDown={this.downPull} onLoadMore={this.loadMorePush}>

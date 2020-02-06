@@ -7,16 +7,15 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import Commonimage from '@components/commonimage/commonimage'
-import Hosdetailborderbtn from '@components/hosDetails/hosdetailborderbtn/hosdetailborderbtn'
-// import PropTypes from 'prop-types'
+import Hosdetailborderbtn from '@components/hosdetailborderbtn/hosdetailborderbtn'
+import PropTypes from 'prop-types'
 import './hosDetailTopHeader.scss'
 
 class Hosdetailtopheader extends Component {
-  // static propTypes = {
-  //   children: PropTypes.any,
-  //   data: PropTypes.array
-  // }
-  //
+  static propTypes = {
+    hidenNavBtn: PropTypes.bool
+  }
+
   // static defaultProps = {
   //   data: []
   // }
@@ -76,16 +75,22 @@ class Hosdetailtopheader extends Component {
         </View>
 
         {/* right */}
-        <View className='hos-detail-topheader-right-bottom-container'>
-          <View className='hos-detail-topheader-inner-contaner'>
-            <Commonimage
-              imageSource={require('@assets/images/hos/hos_inner_nav.png')}
-              imageStyle={{'width': `${Taro.pxTransform(46)}`,
-                'height': Taro.pxTransform(46)}}
-            />
-            <View className='right-bottom-text'>院内导航</View>
-          </View>
-        </View>
+        {
+          !this.props.hidenNavBtn &&
+          
+            <View className='hos-detail-topheader-right-bottom-container'>
+              <View className='hos-detail-topheader-inner-contaner'>
+                <Commonimage
+                  imageSource={require('@assets/images/hos/hos_inner_nav.png')}
+                  imageStyle={{'width': `${Taro.pxTransform(46)}`,
+                    'height': Taro.pxTransform(46)}}
+                />
+                <View className='right-bottom-text'>院内导航</View>
+              </View>
+            </View>
+          
+
+        }
       </View>
     )
   }

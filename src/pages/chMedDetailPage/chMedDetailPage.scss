@@ -1,0 +1,67 @@
+@import '@styles/theme.scss';
+.chMedDetailPage {
+  background-color: #F2F2F2;
+}
+
+
+// sheet 样式覆盖
+
+.at-action-sheet__container {
+  border-radius: 26px;
+  width: 90%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.at-action-sheet__item {
+  font-size: 32px;
+  color: $primary-color;
+}
+
+.at-action-sheet__footer {
+  font-size: 32px;
+  color: $primary-color;
+  border-radius: 26px;
+  margin-top: 16px;
+  border-top: 0 solid black;
+  background-color: #434040;
+}
+.at-action-sheet__body {
+  border-radius: 26px;
+  background-color: #434040;
+}
+
+
+.render-ch-me-view {
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.render-ch-me-view-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.render-ch-me-view-top-img {
+  width: 28px;
+  height: 28px;
+}
+.render-ch-me-view-top-title {
+  margin-left: 16px;
+  color: $text-color-light;
+  font-size: 28px;
+}
+.render-ch-me-view-content {
+  margin-top: 30px;
+  font-size: 28px;
+  color: $text-color;
+}
+
+.ch-med-detail-page-notice {
+  padding: 30px;
+  background-color: white;
+}

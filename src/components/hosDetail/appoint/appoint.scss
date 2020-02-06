@@ -1,0 +1,70 @@
+@import '@styles/theme.scss';
+.appoint {
+}
+.hos-detail-doctor-intr-container {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.hos-detail-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.hos-detail-doctor-gh-inner-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hos-center-dept-desc-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hos-detail-doctor-img-container {
+  margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hos-detail-dept-content {
+  font-size: 28px;
+  color: $text-color;
+  margin-left: 16px;
+}
+.hos-detail-center-label-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 43px;
+}
+
+.hos-detail-label-container {
+  margin-right: 24px;
+}
+
+.hos-select-flag-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.hos-detail-label-text {
+  font-size: 22px;
+  color: $primary-color;
+}
+
+.hos-detail-wechat-phone-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hos-detail-wechat-line {
+  width: 1PX;
+  height: 100px;
+  background-color: #F2F2F2;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+

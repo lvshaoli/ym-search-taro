@@ -10,11 +10,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .filter-content2-item-text {
   font-size: 28px;
   color: $text-color;
 }
+.filter-content2-item-icon {
+  width: 30px;
+  height: 20px;
+}
+
 .filter-content2-line {
   position: absolute;
   left: -30px;

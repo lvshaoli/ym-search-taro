@@ -1,0 +1,14 @@
+@import '@styles/theme.scss';
+.relateIntrComponent {
+  padding: 30px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.hos-detail-hosIntr-container {
+  width: 100%;
+  margin-top: 24px;
+  @include lamp-clamp(2);
+  font-size: 28px;
+  color: $text-color-light;
+}

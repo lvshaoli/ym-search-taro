@@ -37,17 +37,23 @@ class Doctorlistitem extends Component {
 
   render () {
     return (
-      <View className='doctorListItem' onClick={() => {
-        this.props.onDocItemClick && this.props.onDocItemClick()
-      }}
+      <View
+        className='doctorListItem'
+        onClick={() => {
+          this.props.onDocItemClick && this.props.onDocItemClick()
+        }}
       >
-        <View>
+        <View className='doctor-list-item-left-icon'>
           <Commonimage
             imageSource={require('@assets/images/home/home_jddyfsyy.png')}
+            imageStyle={{
+              'width': Taro.pxTransform(86),
+              'height': Taro.pxTransform(86),
+            }}
           />
         </View>
 
-        <View className='doctor-list-item-right-container'>
+        <View className='doctor-list-item-right-item-container'>
           {/* 医生介绍 */}
           <View className='doctor-lite-item-right-intr'>
             <Text className='doctor-list-item-name'>张默默</Text>
@@ -55,22 +61,16 @@ class Doctorlistitem extends Component {
             <Text className='doctor-list-item-grade'>主治医生</Text>
           </View>
           {/* 所属医院 */}
-          <View className='doctor-list-item-right-hos'>
-            <Text className='doctor-list-item-right-text'>解放军总医院第七医学中心八一儿童医院</Text>
-          </View>
+          <View className='doctor-list-item-right-text'>解放军总医院第七医学中心八一儿童医院</View>
           {/* 描述 */}
-          <View className='doctor-list-item-right-desc'>
-            <View className='doctor-list-item-right-desc-text'>
-              早产、低体重儿、新生儿黄疸、新生儿肺炎早产、低体重儿、新生儿黄疸、新生儿肺炎早产、低体重儿、新生儿黄疸、新生儿肺炎
-            </View>
-          </View>
-
-          <View className='doctor-list-item-line'>
-            <Text>
-            </Text>
+          <View className='doctor-list-item-right-desc-text'>
+            早产、低体重儿、新生儿黄疸、新生儿肺炎早产、低体重儿、新生儿黄疸、新生儿肺炎早产、低体重儿、新生儿黄疸、新生儿肺炎
           </View>
         </View>
-
+        <View className='doctor-list-item-line'>
+          <Text>
+          </Text>
+        </View>
 
       </View>
     )

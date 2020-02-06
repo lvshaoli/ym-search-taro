@@ -131,7 +131,7 @@ class Pulltopushrefresh extends Component {
           {this.props.children}
 
           <AtLoadMore
-            onClick={this.props.onLoadMore}
+            onClick={this.loadRecommend}
             status={this.state.status}
           />
         </ScrollView>

@@ -1,0 +1,48 @@
+@import '@styles/theme.scss';
+.quesAnswer {
+}
+
+.render-ques-ans-view {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.render-ques-ans-view-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.render-ques-ans-view-top-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.render-ques-ans-view-top-left-img {
+  width: 56px;
+  height: 32px;
+}
+
+.render-ques-ans-view-top-left-title {
+  font-size: 28px;
+  color: $text-color;
+  margin-left: 16px;
+}
+
+.render-ques-ans-view-top-right-icon {
+  width:17px;
+  height: 22px;
+}
+
+.render-ques-ans-view-bottom {
+  font-size: 26px;
+  color: $text-color-light;
+  margin-top: 16px;
+  @include lamp-clamp(1);
+  margin-left: 72px;
+}

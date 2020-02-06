@@ -9,7 +9,7 @@ import { View } from '@tarojs/components'
 // import PropTypes from 'prop-types'
 // import { connect } from '@tarojs/redux'
 
-import Commonborderbtn from '@components/commonborderbtn/commonborderbtn'
+import { Commonborderbtn } from '@components'
 import Commonimage from '@components/commonimage/commonimage'
 import './person.scss'
 

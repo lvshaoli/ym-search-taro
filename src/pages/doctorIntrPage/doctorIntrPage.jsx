@@ -21,6 +21,36 @@ class Doctorintrpage extends Component {
     
   constructor () {
     super(...arguments)
+    this.state = {
+      filter3Data: [
+        {
+          title: '医生职称',
+          sigle: false,
+          items: [
+            {
+              id: 1,
+              name: '主任医师',
+              checked: true,
+            },
+            {
+              id: 2,
+              name: '副主任医师',
+              checked: false,
+            },
+            {
+              id: 3,
+              name: '主治医师',
+              checked: false,
+            },
+            {
+              id: 4,
+              name: '副主治医师',
+              checked: false,
+            }
+          ]
+        }
+      ]
+    }
   }
 
   componentWillReceiveProps (nextProps) {
@@ -62,7 +92,12 @@ class Doctorintrpage extends Component {
           />
         </View>
         {/* 过滤条件 */}
-        <Doctorlistfilter />
+        <Doctorlistfilter
+          onContent3ItemClick={(item) => {
+            console.log('---onContent3ItemClick---', item)
+          }}
+          filter3Data={this.state.filter3Data}
+        />
 
         <View className='hos-list-item-container'>
           <View>

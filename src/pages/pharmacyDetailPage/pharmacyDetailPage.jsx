@@ -6,8 +6,8 @@
  **/
 import Taro, { Component } from '@tarojs/taro'
 import { View, Image } from '@tarojs/components'
-import { navigateTo } from '@utils/navUtils'
 import Commonimage from '@components/commonimage/commonimage'
+import { Quesanswer } from '@components'
 // import { connect } from '@tarojs/redux'
 import './pharmacyDetailPage.scss'
 
@@ -85,33 +85,6 @@ class Pharmacydetailpage extends Component {
     )
   }
 
-  // 问答
-  renderQuesAnsView = () => {
-    return (
-      <View
-        className='render-ques-ans-view'
-        onClick={() => {
-          navigateTo('/pages/hosQuestionList/hosQuestionList')
-        }}
-      >
-        <View className='render-ques-ans-view-top'>
-          <View className='render-ques-ans-view-top-left'>
-            <Image
-              className='render-ques-ans-view-top-left-img'
-              src={require('@assets/images/hos/hos_question_icon.png')}
-            />
-            <View className='render-ques-ans-view-top-left-title'>西安市医保可以在这里住院吗？</View>
-          </View>
-          <Image
-            className='render-ques-ans-view-top-right-icon'
-            src={require('@assets/images/home/home_common_right.png')}
-          />
-        </View>
-        <View className='render-ques-ans-view-bottom'>可以的，支持省市居民、职工医保、农合医职可以的，支持省市居民、职工医保、农合医职</View>
-      </View>
-    )
-  }
-
 
   render () {
     return (
@@ -138,7 +111,7 @@ class Pharmacydetailpage extends Component {
         { this.renderServiceItems() }
 
         {/* 问答 */}
-        { this.renderQuesAnsView() }
+        <Quesanswer />
       </View>
     )
   }

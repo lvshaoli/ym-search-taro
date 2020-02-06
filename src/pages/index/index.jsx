@@ -53,6 +53,7 @@ class Index extends Component {
             imageSource: require('@assets/images/home/home_chinese_medial.png'),
             onItemClick: () => {
               console.log('中医')
+              navigateTo('/pages/chMediListPage/chMediListPage')
             }
           },
           {name: '药店',

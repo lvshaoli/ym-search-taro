@@ -7,7 +7,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
 // import PropTypes from 'prop-types'
-import Commonborderbtn from '@components/commonborderbtn/commonborderbtn'
+import { Commonborderbtn } from '@components'
 import './commonHosBtnGroup.scss'
 
 class Commonhosbtngroup extends Component {

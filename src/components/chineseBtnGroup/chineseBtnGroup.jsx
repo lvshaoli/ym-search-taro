@@ -6,16 +6,16 @@
  **/
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-// import PropTypes from 'prop-types'
-import Commonborderbtn from '@components/commonborderbtn/commonborderbtn'
+import PropTypes from 'prop-types'
+import { Commonborderbtn } from '@components'
 import './chineseBtnGroup.scss'
 
 class Chinesebtngroup extends Component {
-  // static propTypes = {
-  //   children: PropTypes.any,
-  //   data: PropTypes.array
-  // }
-  //
+  static propTypes = {
+    onToHosClick: PropTypes.func,
+    onPhoneClick: PropTypes.func
+  }
+
   // static defaultProps = {
   //   data: []
   // }
@@ -36,10 +36,16 @@ class Chinesebtngroup extends Component {
         <Commonborderbtn
           commonBorderText='电话联系'
           btnType='border-large'
+          onBtnClick={() => {
+            this.props.onPhoneClick && this.props.onPhoneClick()
+          }}
         />
         <Commonborderbtn
           commonBorderText='去医院'
           btnType='primary-btn'
+          onBtnClick={() => {
+            this.props.onToHosClick && this.props.onToHosClick()
+          }}
         />
       </View>
     )

@@ -36,8 +36,64 @@ class Hostipallist extends Component {
   constructor () {
     super(...arguments)
     this.state = {
-      hasMore: true
+      hasMore: true,
+      filter3Data: [
+        {
+          title: '医院等级',
+          sigle: false,
+          items: [
+            {
+              id: 1,
+              name: '一级医院',
+              checked: false,
+            },
+            {
+              id: 2,
+              name: '二级医院',
+              checked: false,
+            },
+            {
+              id: 3,
+              name: '三级医院',
+              checked: false,
+            }
+          ]
+        },
+        {
+          title: '医院所有权',
+          sigle: true,
+          items: [
+            {
+              id: 1,
+              name: '公立',
+              checked: false,
+            },
+            {
+              id: 2,
+              name: '私立',
+              checked: false,
+            }
+          ]
+        },
+        {
+          title: '医院类型',
+          sigle: true,
+          items: [
+            {
+              id: 1,
+              name: '综合医院',
+              checked: true
+            },
+            {
+              id: 2,
+              name: '专科医院',
+              checked: false
+            }
+          ]
+        }
+      ]
     }
+
   }
 
   componentWillReceiveProps (nextProps) {
@@ -81,7 +137,12 @@ class Hostipallist extends Component {
           />
         </View>
         <View className='hos-list-item-search-filter-container'>
-          <Listfilterpop />
+          <Listfilterpop
+            onContent3ItemClick={(item) => {
+              console.log('---onContent3ItemClick---', item)
+            }}
+            filter3Data={this.state.filter3Data}
+          />
         </View>
         <View className='hos-list-item-container'>
           <Pulltopushrefresh onDown={this.downPull} onLoadMore={this.loadMorePush}>

@@ -5,18 +5,18 @@
  * @DESC: '请描述本页面功能'
  **/
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
-import Primaryselectbtn from '@components/primaryselectbtn/primaryselectbtn'
+import { View } from '@tarojs/components'
+import PropTypes from 'prop-types'
 import Filterbtngroup from './filterBtnGroup/filterBtnGroup'
-// import PropTypes from 'prop-types'
+import Content3item from './content3Item/content3Item'
 import './filterContent3.scss'
 
 class Filtercontent3 extends Component {
-  // static propTypes = {
-  //   children: PropTypes.any,
-  //   data: PropTypes.array
-  // }
-  //
+  static propTypes = {
+    filterShowData: PropTypes.array,
+    onContent3ItemClick: PropTypes.func
+  }
+
   // static defaultProps = {
   //   data: []
   // }
@@ -24,8 +24,7 @@ class Filtercontent3 extends Component {
   constructor () {
     super(...arguments)
     this.state = {
-      hosLists: ['一级医院', '二级医院', '三级医院'],
-      selectedRegion: 0
+      filter3Data: this.props.filterShowData || []
     }
   }
 
@@ -39,85 +38,28 @@ class Filtercontent3 extends Component {
 
   componentDidHide () { }
 
+
   render () {
+    const content = this.state.filter3Data || []
     return (
       <View className='filterContent3'>
         {/* 医院等级 */}
-        <View className='filter-content3-container'>
-          <View className='filter-content3-title-container'>
-            <Text className='filter-content3-title-text'>医院等级</Text>
-          </View>
-          <View className='filter-content3-hos-grad-container'>
-            {
-              this.state.hosLists.map((hosItem, index) => {
-                return <Primaryselectbtn
-                  key={index}
-                  primarySelectText={hosItem}
-                  hasMagin
-                  btnType='primary-gray'
-                  checked={this.state.selectedRegion === index}
-                  onPrimaryClick={() => {
-                    this.setState({
-                      selectedRegion: index
-                    })
-                  }}
-                />
-              })
-            }
-          </View>
-        </View>
+        {
+          content.map((item, index) => {
 
-        {/* 医院所有权 */}
-        <View className='filter-content3-container'>
-          <View className='filter-content3-title-container'>
-            <Text className='filter-content3-title-text'>医院所有权</Text>
-          </View>
-          <View className='filter-content3-hos-grad-container'>
-            {
-              this.state.hosLists.map((hosItem, index) => {
-                return <Primaryselectbtn
-                  key={index}
-                  primarySelectText={hosItem}
-                  hasMagin
-                  btnType='primary-gray'
-                  checked={this.state.selectedRegion === index}
-                  onPrimaryClick={() => {
-                    this.setState({
-                      selectedRegion: index
-                    })
-                  }}
-                />
-              })
-            }
-          </View>
-        </View>
-        {/* 医院类似 */}
-        <View className='filter-content3-container'>
-          <View className='filter-content3-title-container'>
-            <Text className='filter-content3-title-text'>医院类型</Text>
-          </View>
-          <View className='filter-content3-hos-grad-container'>
-            {
-              this.state.hosLists.map((hosItem, index) => {
-                return <Primaryselectbtn
-                  key={index}
-                  primarySelectText={hosItem}
-                  hasMagin
-                  btnType='primary-gray'
-                  checked={this.state.selectedRegion === index}
-                  onPrimaryClick={() => {
-                    this.setState({
-                      selectedRegion: index
-                    })
-                  }}
-                />
-              })
-            }
-          </View>
-        </View>
+            return (
+              <Content3item
+                key={index}
+                itemData={item}
+                onContent3ItemClick={(items) => {
+                  this.props.onContent3ItemClick && this.props.onContent3ItemClick(items)
+                }}
+              />
+            )
+          })
+        }
 
         {/* 特色科室 */}
-
         <View className='filter-content3-btn-group'>
           <Filterbtngroup />
         </View>

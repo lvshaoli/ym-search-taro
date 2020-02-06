@@ -9,15 +9,15 @@ import { View, Text, Image } from '@tarojs/components'
 
 import FilterContent1 from '@components/filterContent1/filterContent1'
 import FilterContent3 from '@components/filterContent3/filterContent3'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import './pharmacyListFilter.scss'
 
 class Pharmacylistfilter extends Component {
-  // static propTypes = {
-  //   children: PropTypes.any,
-  //   data: PropTypes.array
-  // }
-  //
+  static propTypes = {
+    onContent3ItemClick: PropTypes.func,
+    filterShowData: PropTypes.array,
+  }
+
   // static defaultProps = {
   //   data: []
   // }
@@ -98,7 +98,13 @@ class Pharmacylistfilter extends Component {
         }}
         >
           {this.state.allDept && <FilterContent1 />}
-          {this.state.filterDoc && <FilterContent3 />}
+          {this.state.filterDoc && <FilterContent3
+            filterShowData={this.props.filter3Data}
+            onContent3ItemClick={(item) => {
+              this.props.onContent3ItemClick && this.props.onContent3ItemClick(item)
+            }}
+          />
+          }
         </View>
         }
       </View>

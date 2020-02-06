@@ -9,14 +9,14 @@ import { View, Text, Image } from '@tarojs/components'
 import FilterContent1 from '@components/filterContent1/filterContent1'
 import FilterContent2 from '@components/filterContent2/filterContent2'
 import FilterContent3 from '@components/filterContent3/filterContent3'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import './listFilterPop.scss'
 
 class Listfilterpop extends Component {
-  // static propTypes = {
-  //   children: PropTypes.any,
-  //   data: PropTypes.array
-  // }
+  static propTypes = {
+    onContent3ItemClick: PropTypes.func,
+    filter3Data: PropTypes.array
+  }
   //
   // static defaultProps = {
   //   data: []
@@ -27,7 +27,7 @@ class Listfilterpop extends Component {
     this.state = {
       selectDis: false,
       selectFilterAll: false,
-      selectFilter: false
+      selectFilter: false,
     }
   }
 
@@ -117,7 +117,13 @@ class Listfilterpop extends Component {
         >
           {this.state.selectDis && <FilterContent1 />}
           {this.state.selectFilterAll && <FilterContent2 />}
-          {this.state.selectFilter && <FilterContent3 />}
+          {this.state.selectFilter && <FilterContent3
+            filterShowData={this.props.filter3Data}
+            onContent3ItemClick={(item) => {
+              this.props.onContent3ItemClick && this.props.onContent3ItemClick(item)
+            }
+            }
+          />}
         </View>
         }
       </View>

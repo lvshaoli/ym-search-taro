@@ -2,12 +2,12 @@
 .doctorListItem {
   display: flex;
   flex-direction: row;
-  background-color: white;
   padding: 32px 0;
   position: relative;
+  background-color: white;
 }
 
-.doctor-list-item-right-container {
+.doctor-list-item-right-item-container {
   margin-left: 32px;
 }
 
@@ -33,17 +33,11 @@
   font-size: 28px;
 }
 
-.doctor-list-item-right-hos {
-  margin-top: 0px;
-  margin-bottom: 16px;
-}
 .doctor-list-item-right-text {
   color: #666A6D;
   font-size: 26px;
-}
-
-.doctor-list-item-right-desc {
-  margin-top: 0px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .doctor-list-item-right-desc-text {
@@ -58,4 +52,9 @@
   bottom: 0;
   background-color: #EDEDED;
   height: 1PX;
+}
+
+.doctor-list-item-left-icon {
+  height: 86px;
+  background-color: rebeccapurple;
 }

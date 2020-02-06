@@ -8,15 +8,15 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
 import FilterContent4 from '@components/filterContent4/filterContent4'
 import FilterContent3 from '@components/filterContent3/filterContent3'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import './doctorListFilter.scss'
 
 class Doctorlistfilter extends Component {
-  // static propTypes = {
-  //   children: PropTypes.any,
-  //   data: PropTypes.array
-  // }
-  //
+  static propTypes = {
+    onContent3ItemClick: PropTypes.func,
+    filter3Data: PropTypes.array
+  }
+
   // static defaultProps = {
   //   data: []
   // }
@@ -100,7 +100,13 @@ class Doctorlistfilter extends Component {
         }}
         >
           {this.state.allDept && <FilterContent4 />}
-          {this.state.filterDoc && <FilterContent3 />}
+          {this.state.filterDoc && <FilterContent3
+            filterShowData={this.props.filter3Data}
+            onContent3ItemClick={(item) => {
+              this.props.onContent3ItemClick && this.props.onContent3ItemClick(item)
+            }
+            }
+          />}
         </View>
         }
 
