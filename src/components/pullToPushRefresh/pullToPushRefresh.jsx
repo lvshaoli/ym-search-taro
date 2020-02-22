@@ -12,8 +12,11 @@ import './pullToPushRefresh.scss'
 
 class Pulltopushrefresh extends Component {
   static propTypes = {
+    hasMore: PropTypes.bool, // 是否有更多
     onDown: PropTypes.func,
-    onLoadMore: PropTypes.func
+    onLoadMore: PropTypes.func,
+    loadFirst: PropTypes.bool,
+    isHidenBottomLoading: PropTypes.bool
   }
   //
   // static defaultProps = {
@@ -30,13 +33,18 @@ class Pulltopushrefresh extends Component {
       dargState: 0, // 0不做操作 1刷新
       startP: {},
       status: 'more',
+      toTopBol: true
     }
+  }
+
+  componentDidMount () {
+    !this.props.loadFirst && this.loadRecommend()
   }
 
    touchmove = e => {
      let move_p = e.touches[0], // 移动时的位置
        deviationX = 0.30, // 左右偏移量(超过这个偏移量不执行下拉操作)
-       deviationY = 56, // 拉动长度（低于这个值的时候不执行）
+       deviationY = 80, // 拉动长度（低于这个值的时候不执行）
        maxY = 80, // 拉动的最大高度
 
        start_x = this.state.startP.clientX,
@@ -45,7 +53,7 @@ class Pulltopushrefresh extends Component {
        move_y = move_p.clientY,
        dev = Math.abs(move_x - start_x) / Math.abs(move_y - start_y)
      if (dev < deviationX) { // 当偏移数值大于设置的偏移数值时则不执行操作
-       if (move_y - start_y > 0) { // 下拉操作
+       if (move_y - start_y > 0 && this.state.toTopBol) { // 下拉操作
          let pY = Math.abs(move_y - start_y) / 3.5// 拖动倍率
          if (pY >= deviationY) {
            this.setState({
@@ -74,14 +82,16 @@ class Pulltopushrefresh extends Component {
   touchEnd = () => {
     if (this.state.dargState === 1) {
       this._down()
+    } else {
+      this.reduction()
     }
-    // this.reduction()
   }
 
   _down = () => {
     this.props.onDown((downFinish) => {
-
-      downFinish && this.reduction()
+      console.log('downFinish', downFinish)
+      // downFinish && this.reduction()
+      this.reduction()
     })
   }
 
@@ -95,6 +105,21 @@ class Pulltopushrefresh extends Component {
       dargState: 0
     })
   }
+  toTopScrollClick () {
+    this.setState({
+      toTopBol: true
+    })
+  }
+  onScroll (e) {
+    const { scrollTop } = e.detail || {}
+
+    if (scrollTop > 10) {
+      this.setState({
+        toTopBol: false
+      })
+    }
+  }
+
   touchStart = e => {
     this.setState({
       startP: e.touches[0]
@@ -102,10 +127,18 @@ class Pulltopushrefresh extends Component {
   }
   // console.log(info)
   loadRecommend = () => {
-    this.props.onLoadMore((hasMore) => {
+    if (!this.props.hasMore) {
       this.setState({
-        status: hasMore ? 'more' : 'noMore'
+        status: 'noMore'
       })
+      return
+    }
+    this.props.onLoadMore((hasMore) => {
+      setTimeout(() => {
+        this.setState({
+          status: hasMore ? 'more' : 'noMore'
+        })
+      }, 500)
     })
     this.setState({
       status: 'loading'
@@ -126,14 +159,16 @@ class Pulltopushrefresh extends Component {
           onTouchEnd={this.touchEnd}
           onTouchStart={this.touchStart}
           onScrollToLower={this.loadRecommend}
+          onScrollToUpper={this.toTopScrollClick}
+          onScroll={this.onScroll}
           scrollWithAnimation
         >
           {this.props.children}
 
-          <AtLoadMore
+          {!this.props.isHidenBottomLoading && <AtLoadMore
             onClick={this.loadRecommend}
             status={this.state.status}
-          />
+          />}
         </ScrollView>
       </View>
     )
